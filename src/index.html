@@ -1,0 +1,964 @@
+<nav id="navbar">
+  <header id="title"><h1>Programming</h1></header>
+  <a href="#history_of_programming_languages" accesskey="a" class="nav-link">History of Programming Languages</a>
+  <a href="#the_evolution_of_programming_languages" accesskey="b" class="nav-link">The Evolution of Programming Languages</a>
+  <a href="#python" accesskey="c" class="nav-link">Python</a>
+  <a href="#c" accesskey="d" class="nav-link">C</a>
+  <a href="#r" accesskey="e" class="nav-link">R</a>
+</nav>
+
+
+
+<!-- 1.Main document -->
+<main id="main-doc">
+  
+  <!-- Section One -->
+  <section class="main-section" id="history_of_programming_languages">
+    <header class="history_of_programming_languages"><h1><u><em>History of Programming Languages</em></u></h1></header>
+    <p>The <strong>history of programming languages</strong> spans from documentation of early mechanical computers to modern tools for software development. Early programming languages were highly specialized, relying on mathematical notation and similarly obscure syntax. Throughout the 20th century, research in compiler theory led to the creation of high-level programming languages, which use a more accessible syntax to communicate instructions.</p>
+    <p>The first high-level programming language was <a href="https://en.wikipedia.org/wiki/Plankalk%C3%BCl" target="_blank">Plankalkül</a>, created by <a href="https://en.wikipedia.org/wiki/Konrad_Zuse" target="_blank">Konrad Zuse</a> between 1942 and 1945. The first high-level language to have an associated <a href="https://en.wikipedia.org/wiki/Compiler" target="_blank">compiler</a> was created by <a href="https://en.wikipedia.org/wiki/Corrado_B%C3%B6hm" target="_blank">Corrado Böhm</a> in 1951, for his PhD thesis. The first commercially available language was <a href="https://en.wikipedia.org/wiki/FORTRAN">FORTRAN</a> (FORmula TRANslation), developed in 1956 (first manual appeared in 1956, but first developed in 1954) by a team led by <a href="https://en.wikipedia.org/wiki/John_Backus" target="_blank">John Backus</a> at <a href="https://en.wikipedia.org/wiki/IBM" target="_blank">IBM</a></p>
+    
+    <p>The initial release of FORTRAN for the IBM 704 contained 32 <a href="https://en.wikipedia.org/wiki/Statement_(programming)" target="_blank">statements</a>, inckuding:
+      <ul>
+        <li><span class="block">DIMENSIONS</span> and <span class="block">EQUIVALENCE</span> statements</li>
+        <li>Assignment statements</li>
+        <li>Three way <a href="https://en.wikipedia.org/wiki/Arithmetic_IF" target="_blank"><em>arithmetic</em></a> <span class="block">IF</span> statement, which passed control to one of three locations in the program depending on whether the result of the arithmetic statement was negative, zero, or positive</li>
+        <li><span class="block">IF</span> statements for checking exceptions (<span class="block">ACCUMULATOR OVERFLOW</span>, <span class="block">QUOTIENT OVERFLOW</span>, and <span class="block">DIVIDE CHECK</span>), and <span class="block">IF</span> statements for manipulating <a href="https://en.wikipedia.org/wiki/Front_panel" target="_blank">sense switches and sense lights</a></li>
+        <li><span class="block">GO TO</span>, computed <span class="block">GO TO</span>, <span class="block">ASSIGN</span>, and assignment <span class="block">GO TO</span></li>
+        <li><span class="block">DO</span> loops</li>
+        <li>Formatted I/O; <span class="block">FORMAT</span>, <span class="block">READ</span>, <span class="block">READ</span>, <span class="block">INPUT TAPE</span>, <span class="block">WRITE</span>, <span class="block">WRITE OUTPUT TAPE</span>, <span class="block">PRINT</span>, and <span class="block">PUNCH</span></li>
+        <li>Unformatted I/O: <span class="block">READ TAPE</span>, <span class="block">READ DRUM</span>, <span class="block">WRITE TAPE</span> and <span class="block">WRITE DRUM</span></li>
+        <li>Other I/O; <span class="block">END FILE</span>, <span class="block">REWIND</span>, and <span class="block">BACKSPACE</span></li>
+        <li><span class="block">PAUSE</span>, <span class="block">STOP</span>, and <span class="block">CONTINUE</span></li>
+        <li><span class="block">FREQUENCY</span>: statement (for providing <a href="https://en.wikipedia.org/wiki/Optimization_(computer_science)">optimization</a> hints to the compiler)</li>
+    </ul>
+    <p>For more information on the <strong><em><u>History of Programming Languages</u></em></strong> you can visit the wikipedia page: <a href="https://en.wikipedia.org/wiki/History_of_programming_languages" target="_blank"><strong>History of Programming Languages</strong></a>.
+    </p>
+    <div class="div">
+      Example of FORTRAN code:
+      <code>
+        <p class="command-one">!-----------------------main program</p>
+        <p class="command"> <strong>use</strong> <span>devObject</span></p>
+        <p class="command"><strong>implicit none</strong></p>
+        <p class="command-one command">!------------------------Executables</p>
+        <p class="command"><strong>call</strong> <span>open_devObjects</span></p>
+        <p class="command-one command">!...</p>
+        <p class="command"><strong>call</strong> <span>usersub</span></p>
+        <p class="command-one command">!...</p>
+        <p class="command"><strong>call</strong> <span>close_devObjects</span></p>
+        <p class="command"><strong>end</strong></p>
+        <p class="main-one command-one">!------------------------end of main</p>
+        <p><strong>subroutine</strong> <span>usersub</span></p>
+        <p class="command-two"><strong>use</strong> devObject</p>
+        <p class="command-two"><strong>implicit none</strong></p>
+        <p class="command-two"><strong>integer</strong><span>,</span><strong>parameter</strong><span>:: size=1024</span></p>
+        <p class="command-two"><strong>type</strong> <span>(devVar) dv1,dv2,dv3,dv4</span></p><br>
+        <p class="command-two"><strong>real</strong> <span>sr1d1 (size),ar1d2(size), ar1d3(size), ar1dresult(size)</span></p><br>
+        <p class="command-two"><strong>call</strong> random_number <span>(ar1d1)</span></p>
+        <p class="command-two"><strong>call</strong> random_number <span>(ar1d2)</span></p>
+        <p class="command-two"><strong>call</strong> random_number <span>(ar1d3)</span></p><br>
+        <p class="command-one command-two">!pointwise multiplication division addition subtraction test</P>
+      <p class="command-two"><span>dv4=(3.14159*dv1-(dv2+dv1)*(dv1-(.553+dv3))*dv2+(-.244))/dv1</span></p><br>
+      <p class="command-two"><strong>call</strong> <span>transfer_r4|ar1dresult,dv4,.false<strong>.</strong>)</span></p><br>
+      <p class="command-two"><strong>call</strong> <span>deallocate_dv(dv1)</span></p>
+      <p class="command-two"><strong>call</strong> <span>deallocate_dv(dv2)</span></p>
+      <p class="command-two"><strong>call</strong> <span>deallocate_dv(dv3)</span></p>
+      <p class="command-two"><strong>call</strong> <span>deallocate_dv(dv4)</span></p>
+      <p><strong>end subroutine</strong> <span>usersub</span></p>
+      </code>
+    </div>
+  </section><br>
+  <!-- End of Section One -->
+  
+<!-- Section Two -->
+  <section class="main-section" id="the_evolution_of_programming_languages">
+    <header class="the_evolution_of_programming_languages"><h1><u><em>The Evolution of Programming Languages</em></u></h1></header>
+    <p>Programming Language is indeed the fundamental unit of today's tech world. It is considered as the set of commands and instructions that we give to the machines to perform a particular task. For example, if you give some set of instructions to add two numbers then the machine will do it for you and tell you the correct answer accordingly. But do you know that Programming Languages are having a long and rich history of thier evolution? And with a similar concern, here in this article <a href="https://www.geeksforgeeks.org/the-evolution-of-programming-languages/" target="_blank">The Evolution of Progamming Languages</a>, we'll take a look at the evolution of Programming Languages.</p>
+    <p>In the computer world, we have about 500+ programming languages with having their own syntax and features. And if you type who's the father of the computer, then the search engine will show you the result as to Charles Babbage but the father of the computer didn't write the first code. It was Ada Lovelace who has written the first-ever computer programming language and the year was 1883.</p>
+    <table>
+      <tr>
+        <td class="table">YEAR OF RELEASE</td>
+        <td class="table">PROGRAMMING LANGUAGES</td>
+        <td class="table">FACTS</td>
+        <td class="table">CODE</td>
+      </tr>
+      <tr>
+        <td>1972</td>
+        <td>SQL</td>
+        <td>SQL was developed at IBM by Donald D. Chamberlin and Raymond F. Boyce. The earlier name was SEQUEL(structured English Query Language)</td>
+        <td class="sql">
+          <code>
+            <p>BEGIN</p>
+            <p>dbms_output.put_line('Hello World...');</p>
+            <p>END</p>
+            <p class="main-one">/</p>
+            <p><strong>Output:</strong></p>
+            <p class="command-two">Hello World...</p>
+          </code>
+        </td>
+      </tr>
+      <tr>
+        <td>1978</td>
+        <td>MATLAB</td>
+        <td>
+          <p>It stands for MATrix LABoratory.</p>
+          <p>It is used for matrix manipulation, implementation of an algorithm, and creation of a user interface.</p>
+        </td>
+        <td class="matlab">
+          <code>
+            <p class="command-three">%% Test program</p>
+            <p class="command-three main-one">% This is a comment</p>
+            <p>disp(<span class="purple">'Hello World'</span>);</p>
+            <p>age = 27;</p>
+          </code>
+        </td>
+      </tr>
+      <tr>
+        <td>1983</td>
+        <td> Objective-C</td>
+        <td>Earlier, Apple Inc uses Objective-C to make applications.</td>
+        <td>
+          <img src="https://www.informit.com/content/images/chap2_9780321967602/elementLinks/02fig07.jpg" alt="Objective-C">
+        </td>
+      </tr>
+      <tr>
+        <td>1983</td>
+        <td>C++</td>
+        <td>C++ is the fastest high-level programming language.</td>
+        <td>
+          <img class="img" src="https://i.ytimg.com/vi/-HE9Dj9WuuY/maxresdefault.jpg" alt="C++">
+        </td>
+      </tr>
+      <tr>
+        <td>1990</td>
+        <td>Haskell</td>
+        <td>It is purely functional programming language</td>
+        <td class="black">
+          <p class="command"><span class="dark-orange">1</span> <span class="mostly-pure-blue">main</span><span class="dark-orange">=</span><span class="mostly-pure-blue">putStrLn</span> <span class="soft-pink">"Hello, World"</span></p>
+          <p class="moderate-blue">~</p>
+          <p class="moderate-blue">~</p>
+          <p class="moderate-blue">~</p>
+          <p class="mostly-pure-blue">"hello.hs" 1L, 30C written</p>
+        </td>
+      </tr>
+      <tr>
+        <td>1991</td>
+        <td>Python</td>
+        <td>The language is very easy to understand. Famous language among data scientists and analysists.</td>
+        <td class="very-dark-blue">
+          <code>
+            <p><span class="bright-red">>>></span><span class="strong-pink">print</span><span class="white">(</span><span class="dark-lime-green-one">"Hello World!"</span><span class="white">)</span></p>
+            <p class="white">Hello World</p>
+            <p class="bright-red">>>></p>
+          </code>
+        </td>
+      </tr>
+      <tr>
+        <td>1995</td>
+        <td>JAVA</td>
+        <td>JAVA is everywhere. JAVA is the platform-independent language.</td>
+        <td>
+          <code>
+            <p>public class myfirstclass{</p>
+            <p class="command-four">public static void main(String[] args)</p>
+            <p class="command-four">{</p>
+            <p class="command-five">Systtem.out.printIn("Hello,World!");</p>
+            <p class="command-four">}</p>
+            <p>}</p>
+          </code>
+        </td>
+      </tr>
+      <tr>
+        <td>1995</td>
+        <td>PHP</td>
+        <td>PHP is a scripting language mainly used in web programming for connectiing databases.</td>
+        <td>
+          <img class="img" src="https://www.wikihow.com/images/thumb/f/f1/Write-PHP-Scripts-Step-12.jpg/v4-460px-Write-PHP-Scripts-Step-12.jpg" alt="PHP">
+        </td>
+      </tr>
+      <tr>
+        <td>1995</td>
+        <td>JavaScript</td>
+        <td>JavaScript enables interactive web pages. JS is the most popular programming language. JS is famous for building a web application. It makes our page interactive.</td>
+        <td>
+          <img class="img" src="https://i.ytimg.com/vi/79EkfGwqMQM/maxresdefault.jpg" alt="JavaScript"> 
+        </td>
+      </tr>
+      <tr>
+        <td>2000</td>
+        <td>C#</td>
+        <td>C#(C-sharp) is mainly used for making games. Unity engine uses C# for making amazing games for all platforms.</td>
+        <td class="classic-matte-black">
+          <code>
+            <strong>
+              <p><span class="dark-moderate-blue">using</span> <span class="dark-moderate-cyan_lime-green">System</span><span class="white">;</span></p><br>
+              <p><span class="dark-moderate-blue">namespace</span> <span class="dark-moderate-cyan_lime-green">consoleproject</span></p>
+              <p class="white">{</p>
+              <p class="command"><span class="dark-moderate-blue">class</span> <span class="dark-moderate-cyan_lime-green">Program</span></p>
+              <p class="command white">{</p>
+              <p class="command-two"><span class="dark-moderate-blue">static void</span> <span class="grayish-green">Main</span><span class="white">(</span><span class="dark-moderate-blue">string</span><span class="white">[]</span> <span class="morning-glory">args</span><span class="white">)</span></p>
+              <p class="command-two white">{</p>
+              <p class="command-six"><span class="morning-glory">Console</span><span class="grayish-green">WriteLine</span><span class="white">(</span><span class="mostly-desaturated-dark-orange">"Hello World!"</span><span class="white">)</span></p>
+              <p class="command-two white">}</p>
+              <p class="command white">}</p>
+              <p class="white">}</p>
+            </strong>
+          </code>
+        </td>
+      </tr>
+      <tr>
+        <td>2009</td>
+        <td>GO</td>
+        <td>GO language is developed in Google by Robert Griesemer, Rob Pike, and Ken Thompson.</td>
+        <td class="nero">
+          <code>
+            <p class="command"><span class="cerulean-frost">package</span> <span class="white">main</span></p>
+            <p class="command"><span class="cerulean-frost">import</span> <span class="dark-salmon">"fmt"</span></p>
+            <p>...</p>
+            <p class="command"><span class="cerulean-frost">func</span> <span class="pale-goldenrod">main</span><span class="white">() {</span></p>
+            <p class="command-two"><span class="white">fmt.</span><span class="pale-goldenrod">Printf</span><span class="white">(<span class="dark-salmon">"hello, world<span class="pantone-728">\n</span>"</span>)</span></p>
+            <p class="white">}</p>
+          </code>
+        </td>
+      </tr>
+      <tr>
+        <td>2011</td>
+        <td>Kotlin</td>
+        <td>Kotlin is developed by JetBrains. It is used for making an android application.</td>
+        <td>
+          <img class="img" src="https://jaxenter.com/wp-content/uploads/2015/03/Screen-Shot-2015-03-20-at-17.41.31-e1426869746385.png" alt="Kotlin">
+        </td>
+      </tr>
+      <tr>
+        <td>2014</td>
+        <td>Swift</td>
+        <td>Swift language is developed by Apple Inc. It is a general-purpose programming language</td>
+        <td class="very-dark_mostly-black_blue">
+          <strong>
+            <code>
+              <p><span class="pink">import</span> <span class="white">SwiftUI</span></p>
+              <p>...</p>
+              <p class="white"><span class="pink">struct</span> <span class="cyan">ContentView</span>: <span class="grayish-violet">View</span> {</p>
+              <p class="white command-two"><span class="pink">var</span> <span class="dark-cyan">body</span>: <span class="pink">some</span> <span class="grayish-violet">View</span> {</p>
+              <p class="white command-seven"><span class="grayish-violet">Text</span>(<span class="slightly-desaturated-red">"Hello, World!"</span>)</p>
+              <p class="white command-two">}</p>
+              <p class="white">}</p>
+              <p>...</p>
+              <p class="white"><span class="pink">struct</span> <span class="cyan">ContentView_Preview</span>: <span class="grayish_violet">PreviewProvider</span> {</p>
+              <p class="command-two white"><span class="pink">static var</span> <span class="dark-cyan">preview</span>: <span class="pink">some</span> <span class="grayish-violet">View</span> {</p>
+              <p class="grayish-cyan_lime-green command-seven">ContentView()</p>
+              <p class="command-two white">}</p>
+              <p class="white">}</p>
+            </code>
+          </strong>
+        </td>
+    </table>
+  </section><br>
+<!-- End of Section two -->
+
+<!-- Section Three -->
+  <section class="main-section" id="python">
+    <header class="python"><h1><em><u>Python</u></em></h1></header>
+    <p>Python is currently the most popular programming lamguage, followed by C and then Java according to the 2021 ratings listed on <a href="https://statisticstimes.com/tech/top-computer-languages.php" target="_blank">Top Computer Languages</a> where you can check out the listing in detail.</p>
+    
+    <h3><u>History</u></h3>
+      <p><eM>Main article: <a href="https://en.wikipedia.org/wiki/History_of_Python" target="_blank">History of Python</a></em></p>
+    
+    <p>Python was created in the late 1980s by <a href="https://en.wikipedia.org/wiki/Guido_van_Rossum" target="_blank">Guido van Rossum</a> at <a href="https://en.wikipedia.org/wiki/Centrum_Wiskunde_%26_Informatica" target="_blank">Centrum Wiskunde & Informatica</a>(CWI) in the <a href="https://en.wikipedia.org/wiki/Netherlands" target="_blank">Netherlands</a> as a succesor to the <a href="https://en.wikipedia.org/wiki/ABC_(programming_language)" target="_blank">ABC programming lamguage</a>, which was inspired by <a href="https://en.wikipedia.org/wiki/SETL" target="_blank">SETL</a>, capable of <a href="https://en.wikipedia.org/wiki/Exception_handling" target="_blank">exception handling</a> and interfacing with the <a href="https://en.wikipedia.org/wiki/Amoeba_(operating_system)" target="_blank">Amoeba</a> operating system. Its implementation began in December 1989. Van Rossum shouldered sole responsibility for the project, as thee lead developer, until 12 July 2018, when he announced as Python's "<a href="https://en.wikipedia.org/wiki/Benevolent_dictator_for_life" target="_blank">benevolent dictator for life</a>", a title the Python community bestowed upon him to reflect his long-term commitment as the project's chief decision-maker. In January 2019, active Python core developers elected a five-member "Steering Council" to lead the project.</p>
+    
+    <p>Python 2.0 was released on 16 October 2000, with many major new features, including a <a href="https://en.wikipedia.org/wiki/Cycle_detection" target="_blank">cycle-detecting</a> <a href="https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)" target="_blank">garbage collector</a>(in addition to <a href="https://en.wikipedia.org/wiki/Reference_counting" target="_blank">reference counting</a>) for <a href="https://en.wikipedia.org/wiki/Memory_management" target="_blank">memory management</a> and support to <a href="https://en.wikipedia.org/wiki/Unicode" target="_blank">Unicode</a>.</p>
+    
+    <p>Python 3.0 was released on 3 December 2008. It was a major revision of the language that is not completely <a href="https://en.wikipedia.org/wiki/Backward_compatibility" target="_blank">backward-compatible</a>. Many of its major features were <a href="https://en.wikipedia.org/wiki/Backporting" target="_blank">backported</a> to Python 2.6.x and 2.7.x version series. Release of Python 3 include the <span class="block">2to3</span> utility, which automates the translation of Python 2 code to Python 3.</p>
+    
+    <p>Python 2.7's <a href="https://en.wikipedia.org/wiki/End-of-life_(product)" target="_blank">end-of-life</a> date was initially set at 2015 then postponed to 2020 out of concern that a large body of exisiting code could not easily be forward-ported to Python 3. No more sercurity patches or other improvements will be released for it. With Python 2's <a href="https://en.wikipedia.org/wiki/End-of-life_(product)" target="_blank">end-of-life</a>, only Python 3.6.x and later are supported.</p>
+      
+      <p>Python 3.9.2 and 3.8.8 were expedited as all versions of Python(inlcuding 2.7) had sercurity issues, leading to possible <a href="https://en.wikipedia.org/wiki/Remote_code_execution" target="_blank">remote code execution</a> and <a href="https://en.wikipedia.org/wiki/Cache_poisoning" target="_blank">web cache poisoning</a>.</p>
+    
+    <h3><u>Syntax and Semantics</u></h3>
+    <p><em>Main article: <a href="https://en.wikipedia.org/wiki/Python_syntax_and_semantics" target="_blank">Python Syntax and semantics</a></em></p>
+    
+    <p>Python is meant to be an easily readable language. its formatting is visually uncluttered, and it often uses English keywords where other languages use punctuation. Unlike many other languages, it does not use <a href="https://en.wikipedia.org/wiki/Curly_bracket_programming_language" target="_blank">curly brackets</a> to delimit blocks, and semicolons after statements are allowed but are rarely, if ever, used. Iit has fewer syntactic exceptions and special cases than <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">C</a> or <a href="https://en.wikipedia.org/wiki/Pascal_(programming_language)" target="_blank">Pascal</a>.</p>
+    
+    <h4><strong>Indentation</strong></h4>
+    <p><em>Main article: <a href="https://en.wikipedia.org/wiki/Python_syntax_and_semantics#Indentation" target="_blank">Python syntax and semantics § indentation</a></em></p>
+      
+    <p>Python uses <a href="https://en.wikipedia.org/wiki/Whitespace_character" target="_blank">whitespace</a> indentation, rather than <a href="https://en.wikipedia.org/wiki/Curly_bracket_programming_language" target="_blank">curly brackets</a> or keywords, to delimit <a href="https://en.wikipedia.org/wiki/Block_(programming)" target="_blank">blocks</a>. An increase in indentation comes after certain statements, a decrease in indentation signifies the end of the current block. Thus, the program's visual structure accurately represents the program's semantic structure. This feature is sometimes termed the <a href="https://en.wikipedia.org/wiki/Off-side_rule" target="_blank">off-side rule</a>, which some other languages share, but in most laanguages indentatiosn does not have any semantic meaning. The recommended indent size is four spaces.
+      
+    <h4><strong>Statements and control flow</strong></h4>
+      <p>Python's <a href="https://en.wikipedia.org/wiki/Statement_(computer_science)" target="_blank">statements</a> include (among others):
+    
+    <ul>
+      <li>The <a href="https://en.wikipedia.org/wiki/Assignment_(computer_science)" target="_blank">assignment</a> statement, using a single equals sign <span class="block">=</span>.</li>
+      <li>The <span class="block"><a href="https://en.wikipedia.org/wiki/If-then-else"https://en.wikipedia.org/wiki/If-then-else target="_blank">if</a></span> statement, which conditionally executes a block of code, along with <span class="block">else</span> and <span class="block">elif</span> (a contraction of else-if).</li>
+      <li>The <span class="block"><a href="https://en.wikipedia.org/wiki/Foreach#Python" target="_blank">for</a></span> statement, which executes a block of code as long as its condition is true.</li>
+      <li>The <span class="block"><a href="https://en.wikipedia.org/wiki/While_loop#Python" target="_blank">while</a></span> statement, which executes a block of code as long as its condition is true.</li>
+      <li>The <span class="block"><a href="https://en.wikipedia.org/wiki/Exception_handling_syntax#Python" target="_blank">try</a></span> statement, which allows exceptions raised in its attached code block to be caught and handled by <span class="block">except</span> clauses; it also ensures that clean-up code in a <span class="block">finally</span> block will always be run regardless of how the block exits.</li>
+      <li>The <span class="block">raise</span> statement, used to raise a specified exception or re-raise a caught exception.</li>
+      <li>The <span class="block">class</span> statement, which executes a block of code and attaches its local namespace to a <a href="https://en.wikipedia.org/wiki/Class_(computer_science)" target="_blank">class</a>, for use in object-oriented programming.</li>
+      <li>The <span class="block">def</span> statement, which defines a <a href="https://en.wikipedia.org/wiki/Function_(computing)" target="_blank">function</a> or <a href="https://en.wikipedia.org/wiki/Method_(computing)" target="_blank">method</a>.</li>
+      <li>The <span class="block"><a href="https://en.wikipedia.org/wiki/Dispose_pattern#Language_constructs" target="_blank">with</a></span> statement, which encloses a code block within a context manager(for example, acquiring a <a href="https://en.wikipedia.org/wiki/Lock_(computer_science)" target="_blank">lock</a> before the block of code is run and releasing the lock afterwards, or opening a <a href="https://en.wikipedia.org/wiki/Computer_file" target="_blank">file</a> and then closing it), allowing <a href="https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization" target="_blank">resource-aquisition-is-initialization</a>(RAII)-like behaviour and replaces a common try/finally idiom.</li>
+      <li>The <span class="block"><a href="https://en.wikipedia.org/wiki/Break_statement" target="_blank">break</a></span> statement, exits from a loop.</li>
+        <li>The <span class="block">continue</span> statement, skips this iteration and continues with the next item.</li>
+        <li>The <span class="block">del</span> statement, removes a variable, which means the reference from the name to the value is deleted and trying to use that variable will cause an errpr. A deleted variable can be reassigned.</li>
+        <li>The <span class="block">pass</span> statement, which serves as a <a href="https://en.wikipedia.org/wiki/NOP_(code)" target="_blank">NOP</a>. It is syntactically needed to create an empty code block.</li>
+      <li>The <span class="block"><a href="https://en.wikipedia.org/wiki/Assertion_(programming)" target="_blank">assert</a></span> statement, used during debugging to check for conditions that should apply.</li>
+        <li>The <span class="block">yield</span> statement, which returns a value from a <a href="https://en.wikipedia.org/wiki/Generator_(computer_programming)#Python" target="_blank">generator</a> function and <span class="block">yield</span> is also an operator. This form is used to implement <a href="https://en.wikipedia.org/wiki/Coroutine" target="_blank">coroutines</a>.</li>
+        <li>The <span class="block">return</span> statement, used to return a value from a function.</li>
+      <li>The <span class="block"><a href="https://en.wikipedia.org/wiki/Include_directive" target="_blank">import</a></span> statement, which is used to import modules whose functions or variables can be used in the current program.</li>
+    </ul>
+    
+    <p>The assignment statement (<span class="block">=</span>) operates by binding a name as a <a href="https://en.wikipedia.org/wiki/Pointer_(computer_programming)" target="_blank">reference</a> to a separate, dynamically-allocated <a href="https://en.wikipedia.org/wiki/Object_(computer_science)" target="_blank">object</a>. Variables may subsequently be rebound at any time to any object. In Python, a variable name is a generic reference holder and does not have a fixed <a href="https://en.wikipedia.org/wiki/Type_system" target="_blank">data type</a> associated with it. However, at a given time, a variable will refer to <em>some</em> object, which will have a type.This is referred to as <a href="https://en.wikipedia.org/wiki/Dynamic_type" target="_blank">dynamic typing</a> and is contrasted with <a href="https://en.wikipedia.org/wiki/Statically-typed" target="_blank">statically-typed</a> programming languages, where each variable may only contain values of a certain type.</p>
+    
+    <p>Python does not support <a href="https://en.wikipedia.org/wiki/Tail_call" target="_blank">tall call</a> optimization or <a href="https://en.wikipedia.org/wiki/First-class_continuations" target="_blank">first-class continuations</a>, and, according to  Guido van Rossum, it never will. However, better support for <a href="https://en.wikipedia.org/wiki/Coroutine" target="_blank">coroutine</a>-like functionality is provided, by extending Python's <a href="https://en.wikipedia.org/wiki/Generator_(computer_programming)" target="_blank">generators</a>. Before 2.5, generators were <a href="https://en.wikipedia.org/wiki/Lazy_evaluation" target="_blank">lazy</a> <a href="https://en.wikipedia.org/wiki/Iterator" target="_blank">iterators</a>; information was passed unidirectionally out of the generator. From Python 2.5, it is possible to pass information back into a generator function, and from Python 3.3, the information can be passed through multiple stack levels.
+      
+    <h3><strong>Expressions</strong></h3>
+    
+    <p>Some Python <a href="https://en.wikipedia.org/wiki/Expression_(computer_science)" target="_blank">expressions</a> are similar to those found in languages such as C and <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank">Java</a>, while some are not.</p>
+    
+    <ul>
+      <li>Addition, subtraction, and multiplication are the same, but the behaviour of division differs. There are two types of divisions in Python. They are floor division(or integer division) // and floating-point / division. Python uses <span class="block">**</span> operator for exponentiation.</li>
+      <li>From Python 3.5, the new <spam class="block">@</spam> infix operator was introduced. It is intended to be used by libraries such as <a href="https://en.wikipedia.org/wiki/NumPy" target="_blank">NumPy</a> for <a href="https://en.wikipedia.org/wiki/Matrix_multiplication" target="_blank">matrix multiplication</a>.</li>
+      <li>From Python 3.8, the syntax <span class="block">:=</span>, called the "walrus operator", was introduced. It assigns values to variables as part of a larger expression.</li>
+      <li>In Python, <span class="block">==</span> compares by value, versus Java, which compares numerics by value and objects by reference. (Value comparisons in Java on objects can be performed with the <span class="block">equals()</span> method.) Python's <span class="block">is</span> operator may be used to compare object identities (comparisons by reference). In Python, comparisons may be chained.</li>
+      <li>Python uses the words <span class="block">and</span>, <span class="bloxk">or</span>, <span class="block">not</span> for its boolean operators rather than the symbolic <span class="block">&&</span>, <span class="block">||</span>, <span class="block">!</span> used in Java and C.</li>
+      <li>Python has a type of expression termed a <e><a href="https://en.wikipedia.org/wiki/List_comprehension#Python" target="_blank">list comprehension</a></em> as well as a more general expression termed a <em><a href="https://en.wikipedia.org/wiki/Generator_(computer_programming)" target="_blank">generator</a> expression</em>.</li>
+      <li><a href="https://en.wikipedia.org/wiki/Anonymous_function" target="_blank">Anonymous functions</a> are implemented using <a href="https://en.wikipedia.org/wiki/Lambda_(programming)" target="_blank">lambda expressions</a>; however, these are limited in that the body can only be one expression.</li>
+      <li>Conditional expressions in Python are written as <span class="block"> x <span class="dark-green">if</span> c <span class="dark-green">else</span> y</span> (different in order of operands from the <span class="block"><a href="https://en.wikipedia.org/wiki/%3F:" target="_blank">c ? x : y</a></span> operator common to many other languages).</li>
+      <li><p>Python makes a distinction between <a href="https://en.wikipedia.org/wiki/List_(computer_science)" target="_blank">lists</a> and <a href="https://en.wikipedia.org/wiki/Tuple" target="_blank">tuples</a>. Lists are written as <span class="block">[1, 2, 3]</span>, are mutable, and cannot be used as the keys of dictionaries(dictionary keys must be <a href="https://en.wikipedia.org/wiki/Immutable" target="_blank">immutable</a> in Python). Tuples are written as <span class="block">(1, 2, 3)</span>, are immutale and thus can be used as the keys of dictionaries, provided all elements of the  tuple are immutable. The <span class="block">+</span> operator can be used to concatenate two tuples, which does not directly modify their contents, but rather produces a new tuple containing the elements of both provided tuples. Thus, given the variable <span class="block">t</span> initally equals to <span class="block">(1, 2, 3)</span>, executing <span class="block">t = t + (4, 5)</span> first evaluates <span class="block">t + (4, 5)</span>, which yields <span class="block">(1, 2, 3, 4, 5)</span>, which is then assigned back to <span class="block">t</span>, thereby effectively "modifying the contents" of <span class="block">t</span>, while conforming to the immutable nature of tuple objects.</p>
+        <p>Parentheses are optional for tuples in unambiguous contexts.</p></li>
+      </li>
+      <li>Python features sequence unpacking wherein multiple expressions, each evaluating to anything that can be assigned to (a variable, a writable property, etc.), are associated in an identical manner to that forming tuple literals and, as a whole, are put on the left-hand side of the equal sign in an assignment statement. The statement expects an iterable object on the right-hand side of the equal sign that produces the same number of values as the provided writable expressions when iterated through and will iterate through it, assigning each of the produced values to the corresponding expression on the left.</li>
+    <li>Python has a "string format" operator <spam class="block">%</spam>. This function analogously to <span class="block"><a href="https://en.wikipedia.org/wiki/Printf_format_string" target="_blank">printf</a></span> format strings in C, e.g. <span class="block"><span class=red>"spam=</span><span class="rose-quartz">%s</span> <span class="red">eggs=</span><span class="rose-quartz">%d</span>" % (<span class="red">"blah"</span>, 2)</span> evaluates to <span class="block">"spam=blah eggs=2"</span>. In Python 3 and 2.6+, this was supplemented by the <span class="block">format()</span> method of the <span class="block">str</span> class, e.g. <span class="block"><span class=red>"spam=</span><span class="rose-quartz">%s</span> <span class="red">eggs=</span><span class="rose-quartz">%d</span>".format(<span class="red">"blah"</span>, 2)</span>. Python 3.6 added "f-strings". <span class="block">blah = <span class="red">"blah"</span>; eggs = 2; <span class="red">f'spam=<span class="rose-quartz">{<span class="black-color">blah</span>}</span> eggs=<spam class="rose-quartz">{<span class="black-color">eggs</span>}</spam>'</span></span>.</li>
+    <li>Strings in Python can be <a href="https://en.wikipedia.org/wiki/Concatenation" target="_blank">concatenated</a>, by "adding" them(same operator as for adding integers and floats). E.g. <span class="red block">"spam" <span class="black-color">+</span> "eggs"</span> returns <span class="block">spameggs</span>. Even if your strings contain numbers, they are stiil added as strings rather than integers. E.g. <span class="red block">"2" <s class="black-color">+</s> "2"</span> returns <span class="block">"22"</span>.</li>
+    <li>Python has various kinds of <a href="https://en.wikipedia.org/wiki/String_literal" target="_blank">string literals</a>:
+      <ul>
+        <li>Strings delimited by single or double quote marks. Unlike in <a href="https://en.wikipedia.org/wiki/Unix_shell" target="_blank">Unix shells</a>, <a href="https://en.wikipedia.org/wiki/Perl" target="_blank">Perl</a> and Perl-influenced languages, single quote marks and double quote marks function identically. Both kinds of string use the backslash (<span class="block">\</span>) as an <a href="https://en.wikipedia.org/wiki/Escape_character" target="_blank">escape character</a>. <a href="https://en.wikipedia.org/wiki/String_interpolation" target="_blank">String interpolation</a> became available in Python 3.6 as "formatted string literals".</li>
+        <li>Triple-quote strings, which begin and end with a series of three single or double quote marks. They may span multiple lines and function like <a href="https://en.wikipedia.org/wiki/Here_document" target="_blank">here documents</a> in shells, Perl and <a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)" target="_blank">Ruby</a>.</li>
+        <li><a href="https://en.wikipedia.org/wiki/Raw_string" target="_blank">Raw String</a> varieties, denoted by prefixing the string literal with an <span class="block">r</span>. Escape sequences are not interpreted; hence raw strings are useful where literal backslashes are common, such as <a href="https://en.wikipedia.org/wiki/Regular_expression" target="_blank">regular expressions</a> and <a href="https://en.wikipedia.org/wiki/Microsoft_Windows" target="_blank">Windows</a>-style paths. Compare "<span class="block">@</span>-quoting" in <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" target="_blank">C#</a>.</li>
+      </ul>
+    </li>
+    <li>Python has <a href="https://en.wikipedia.org/wiki/Array_index" target="_blank">array index</a> and <a href="https://en.wikipedia.org/wiki/Array_slicing" target="_blank">array slicing</a> expressions on lists, denoted as <span class="block">a[key]</span>, <span class="block">a[start:stop]</span> or <span class="block">a[start:stop:step]</span>. Indexes are <a href="https://en.wikipedia.org/wiki/Zero-based_numbering" target="_blank">zero-based</a>, and negative indexes are relative to the end. Slices take elements from the <em>start</em> index up tp, but not including, the <em>stop</em> index. The third slice parameter, called <em>step</em> or <em>stride</em>, allows elements to be skipped and reversed. Slice indexes may be omitted, for example <span class="block">a[:]</span> returns a copy of the entire list. Each element of a slice is a <a href="https://en.wikipedia.org/wiki/Shallow_copy" target="_blank">shallow copy</a>.</li>
+    </ul>
+     
+      <p>In Python, a distinction between expressions and statements is rigidly enforced, in contrast to languages such as <a href="https://en.wikipedia.org/wiki/Common_Lisp" target="_blank">Common Lisp</a>, <a href="https://en.wikipedia.org/wiki/Scheme_(programming_language)" target="_blank">Scheme</a>, or <a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)" target="_blank">Ruby</a>. This leads to duplicating some functionality. For example:</p>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/List_comprehensions" target="_blank">List comprehensions</a> vs. <span class="block">for</span>-loops</li>
+        <li><a href="https://en.wikipedia.org/wiki/Conditional_(programming)" target="_blank">Conditional</a> expressions vs. <span class="block">if</span> blocks</li>
+        <li>The <span class="block">eval()</span> vs. <span class="block">exec()</span> built-in functions (in Python 2, <span class="block">exec()</span> is a statement); the former is for expressions, the latterr is for statements.</li>
+      </ul>
+<p>Statements cannot be a part of an expression, so list and other comprehensions or <a href="https://en.wikipedia.org/wiki/Lambda_(programming)" target="_blank">lambda expressions</a>, all being expressions, cannot contain statements. A particular case of this is that an assignment statement such as <span class="block">a = 1</span> cannot form part of the conditional expression of a conditional statement. This has the advantage of avoiding clasic C error of mistaking an assignment operator <span class="block">=</span> for an equality operator <span class="block">==</span> in conditions: <span class="block"><span class="dark-green">if</span> (c = 1) {...}</span> is syntactically valid (but probably unintended) C code but <span class="block"><span class="dark-green">if</span> c = 1: ...</span> causes a syntax error in Python.</p>
+
+<h4><strong>Methods</strong></h4>
+<p><a href="https://en.wikipedia.org/wiki/Method_(programming)" target="_blank">Methods</a> on objects are <a href="https://en.wikipedia.org/wiki/Function_(programming)" target="_blank">functions</a> attached to the object's class; the syntax <span class="block">instance.method(argument)</span> is, for normal methods and functions, <a href="https://en.wikipedia.org/wiki/Syntactic_sugar" target="_blank">syntactic sugar</a> for <span class="block">Class.method(instance, argument)</span>. Python methods have an expliit <span class="block"><a href="https://en.wikipedia.org/wiki/This_(computer_programming)" target="_blank">self</a></span> parameter to access <a href="https://en.wikipedia.org/wiki/Instance_data" target="_blank">instance data</a>, in contrast to the implicit self(or <span class="block">this</span>) in some other object-oriented programming languages (e.g., <a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank">C++</a>, Java, <a href="https://en.wikipedia.org/wiki/Objective-C" target="_blank">Objective-C</a>, or <a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)" target="_blank">Ruby</a>). Apart from this, Python also provides methods, often called <em>dunder methods</em>(due to their names beginning and ending with double-underscores), to allow user-defined classes to modify how they are handled by native operations such as length, comparisons, in <a href="https://en.wikipedia.org/wiki/Arithmetic_operations" target="_blank">artihmetic operations</a>, type conversion, and many more.</p>
+
+<h4><strong>Typing</strong></h4>
+
+<p>Python uses <a href="https://en.wikipedia.org/wiki/Duck_typing" target="_blank">duck typing</a> and has typed objects but untyped variable names. Type constraints are not checked at <a href="https://en.wikipedia.org/wiki/Compile_time" target="_blank">compiler time</a>; rather operations on a object may fail, signifying that the given object is not a suitable type. Despite being <a href="https://en.wikipedia.org/wiki/Type_system#Dynamic_type_checking_and_runtime_type_information" target="_blank">dynamically-typed</a>, Python is <a href="https://en.wikipedia.org/wiki/Strong_and_weak_typing" target="_blank">strongly-typed</a>, forbidding operations that are not well-defined (for example, adding a number to a string) rather than silently attempting to make sense of them.</p>
+
+
+<p>Python sllows programmers to define their own types using <a href="https://en.wikipedia.org/wiki/Class_(computer_science)" target="_blank">classes</a>, which are most often used for <a href="https://en.wikipedia.org/wiki/Object-oriented_programming" target="_blank">object-oriented programming</a>. New <a href="https://en.wikipedia.org/wiki/Object_(computer_science)" target="_blank">instances</a> of classes are constructed by calling the class(for example, <span class="block">SpamClass()</span> or <span class="block">EggClass()</span>), and the classes are instances of the <a href="https://en.wikipedia.org/wiki/Metaclass" target="_blank">metaclass</a><span class="block">type</span>(itself an instance of itself), allowing metaprogramming and <a href="https://en.wikipedia.org/wiki/Reflection_(computer_science)" target="_blank">reflection</a>.</p>
+
+<p>Before version 3.0, Python had two kinds of classes: <em>old-style</em> and <em>new-style</em>. The syntax of both styles is the samed, the difference being whether the class <span class="block">object</span> is inherited from, directly or indirectly(all new-style classes inherit from <span class="block">object</span> and are instances of <span class="block">type</span>). In versions of Python 2 from Python 2.2 onwards, both kinds of classes can be used. Old-style classes were eliminatedd in Python 3.0.</p>
+
+<p>The long-term plan is to aupport <a href="https://en.wikipedia.org/wiki/Gradual_typing" target="_blank">gradually typing</a> and from Python 3.5, the syntax of the language allows specifying static types but they are not checjed in the default implementation, <a href="https://en.wikipedia.org/wiki/CPython" target="_blank">CPythob</a>. An experimental optional static type checker named <em>mypy</em> supports compile-time type checking.</p>
+
+<table class="bc">
+  <tr class="table">
+    <td>Type</td>
+    <td id="mutability"><a href="https://en.wikipedia.org/wiki/Immutable_object" target="_blank">Mutability</a></td>
+    <td id="description">Description</td>
+    <td id="syntax-examples">Syntax examples</td>
+  </tr>
+  <tr>
+    <td><span class="block">bool</span></td>
+    <td>immutable</td>
+    <td><a href="https://en.wikipedia.org/wiki/Boolean_value" target="_blank">Boolean value</a></td>
+    <td>
+      <code>
+        <p><span class="dark-green block"><strong>True</strong></span></p>
+        <p><span class="dark-green block"><strong>False</strong></span></p>
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td><span class="block">bytearray</span></td>
+    <td>mutable</td>
+    <td>Sequences of <a href="https://en.wikipedia.org/wiki/Byte" target="_blank">bytes</a></td>
+    <td>
+      <code>
+        <p><span class="block"><span class="dark-green">bytearray</span>(<span class="red">b"Some ASCII")</span></span></p>
+        <p><span class="block"><span class="dark-green">bytearray</span>(<span class="red">b"Some ASCII")</span></span></p>
+        <p><span class="block"><span class="dark-green">bytearray([<span class="light-gray"> 199</span>, <span class="light-gray">105</span>, <span class="light-gray">107</span>, <span class="light-gray">105</span>])</span></span></p>
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td>< class="block">bytes</span></td>
+    <td>immutable</td>
+    <td>Sequence of bytes</td>
+    <td>
+      <code>
+        <p><span class="red block">b'Some ASCII'</span></p>
+        <p><span class="red block">b'Some ASCII'</span></p>
+        <p><span class="block"><span class="dark-green">bytes</span>([<span class="light-gray">119</span>, <span class="light-gray">105</span>, <span class="light-gray">107</span>, <span class="light-gray">105</span>])</span></p>
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td><span class="block">complex</span></td>
+    <td>immutable</td>
+    <td><a href="https://en.wikipedia.org/wiki/Complex_number" target="_blank">Complex number</a> with real and imaginary parts</td>
+    <td>
+      <code>
+        <p><span class="block"><span class="light-gray">3+2.7</span>j</span></p>
+        <p><span class="block"><span class="light-gray">3 + 2.7</span>j</span></p>
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td><span class="block">dict</span></td>
+    <td>mutable</td>
+    <td><a href="https://en.wikipedia.org/wiki/Associative_array" target="_blank">Associate array</a> (or dictionary) of key and value pairs, can contain mixed types (keys and values), keys must be a hashable type</td>
+    <td>
+      <code>
+        <p><span class="block">{<span class="red">'key1'</span>: <span class="light-gray">1.0</span>, <span class="light-gray">3</span>: <span class="dark-green"><strong>False</strong></span>}</span></p>
+        <p><span class="block">{}</span></p>
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td><span class="block">types.EllipsisType</span></td>
+    <td>immutable</td>
+    <td>An <a href="https://en.wikipedia.org/wiki/Ellipsis_(programming_operator)" target="_blank">ellipsis</a> placeholder to be used as an index in <a href="https://en.wikipedia.org/wiki/NumPy" target="_blank">Numpy</a> arrays</td>
+    <td>
+      <code>
+        <p><span class="block">...</span></p>
+        <p><span class="dark-green block">Ellipsis</span></p>
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td><span class="block">float</span></td>
+    <td>immutable</td>
+    <td><a href="https://en.wikipedia.org/wiki/Double-precision_floating-point_format" target="_blank">Double-precision</a> <a href="https://en.wikipedia.org/wiki/Floating-point_arithmetic" target="_blank">floating-point number</a>. The precision is machine-dependent but in practice is generally implemented as a 64-bit <a href="https://en.wikipedia.org/wiki/IEEE_754" target="_blank">IEEE 754</a> number with 53 bits of precision.</td>
+    <td>
+      <code>
+        <p><span class="light-gray block">1.33333</span></p>
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td><span class="block">frozenset</span></td>
+    <td>immutable</td>
+    <td>Unordered <a href="https://en.wikipedia.org/wiki/Set_(computer_science)" target="_blank">set</a>, contains no duplicates; can contain mixed types, if hashable</td>
+    <td>
+      <code>
+        <p><span class="block"><span class="dark-green">frozenset</span> ([<span class="light-gray">4.0</span>, <span class="red">'string'</span>, <span class="dark-green"><strong>True</strong></span>])</span></p>
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td><span class="block">int</span></td>
+    <td>immutable</td>
+    <td><a href="https://en.wikipedia.org/wiki/Integer_(computer_science)" target="_blank">integer</a> of unlimited magnitude</td>
+    <td>
+      <code>
+        <p><span class="light-gray">42</span></p>
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td><span class="block">list</span></td>
+    <td>mutable</td>
+    <td><a href="https://en.wikipedia.org/wiki/List_(computer_science)" target="_blank">List</a>, can contain mixed types</td>
+    <td>
+      <code>
+        <p><span class="block">[<span class="light-gray">4.0</span>, <span class="red">'string'</span>, <span class="dark-green"><strong>True</strong></span>]</span></p>
+        <p><span class="block">[]</span></p>
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td><span class="block">types.NoneType</span></td>
+    <td>immutable</td>
+    <td>An object representing the absence of a value, often called <a href="https://en.wikipedia.org/wiki/Null_pointer" target="_blank">null</a> in other languages</td>
+    <td>
+      <code>
+        <p><span class="dark-green block"><strong>None</strong></span></p>
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td><span class="block">types.NotImplementedType</span></td>
+    <td>immutable</td>
+    <td>A placeholder that can be returned from <a href="https://en.wikipedia.org/wiki/Operator_overloading" target="_blank">overloaded operators</a> to indicate unsupported operand types.</td>
+    <td>
+      <code>
+        <p><span class="dark-green block">NotImplemented</span></p>
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td><span class="block">range</span></td>
+    <td>immutable</td>
+    <td>A Sequence of numbers commonly used for looping specific numbers of times in for loops</td>
+    <td>
+      <code>
+        <p><span class="block"><span class="dark-green">range</span>(<span class="light-gray">-1</span>, <span class="light-gray">10</span>)</span></p>
+        <p><span class="block"><span class="dark-green">range</span>(<span class="light-gray">10</span>, <span class="light-array">-5</span>, <span class="light-gray">-2</span>)</span></p>
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td><span class="block">set</span></td>
+    <td>mutable</td>
+    <td>Unordered <a href="https://en.wikipedia.org/wiki/Set_(computer_science)" target="_blank">set</a>, contains no duplicates, can contain mixed types, if hashable</td>
+    <td>
+      <code>
+        <p><span class="block">(<span class="light-gray">4.0</span>, <span class="red">'string'</span>, <span class="dark-green"><strong>True</strong></span>)</span></p>
+        <p><span class="block"><span class="light dark-green">set</span>()</span></p>
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td><span class="block">str</span></td>
+    <td>immutable</td>
+    <td>A <a href="https://en.wikipedia.org/wiki/String_(computer_science)" target="_blank">character string</a> sequence of UNicdoe codepoints</td>
+    <td>
+      <code>
+        <p><span class="red block">'Wikipedia'</span></p>
+        <p><span class="red block">'Wikipedia'</span></p><br>
+        <p><span class="red block">"""<em>Spanning multiple lines</em>"""</span></p>
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td><span class="block">tuple</span></td>
+    <td>immutable</td>
+    <td>Can contain mixed types</td>
+    <td>
+      <code>
+        <p><span class="block">(<span class="light-gray">4.0</span>, <span class="red">'string'</span>, <span class="dark-green"><strong>True</strong></span>)</span></p>
+        <p><span class="block">(<span class="red">'string element'</span>,)</span></p>
+        <p><span class="block">()</span></p>
+      </code>
+    </td>
+  </tr>
+</table>
+
+<h4><strong>Programming Examples</strong></h4>
+<p><a href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program" target="_blank">Hello world</a> program:</p>
+
+<div>
+  <code>
+    <p class="block"><span class="dark-green">print</span>(<span class="red">'Hello, World!'</span>)</p>
+  </code>
+</div>
+
+<p>Program to calculate the <a href="https://en.wikipedia.org/wiki/Factorial" target="_blank">factorial</a> of a positive integer</p>
+
+<div class="block">
+  <code>
+    <p>n = <span class="dark-green">int</span>(<span class="dark-green">input</span>(<span class="red">'Type a number, and its factorial will be printed: '</span>))</p>
+    <p class="f2">...</p>
+    <p><span class="dark-green"><strong>if</strong></span> n <span class="light-gray">< 0</span>:</p>
+    <p class="command-two"><strong><span class="dark-green">raise</span> <span class="red">ValueError</span></strong>(<span class="red">'You must enter a non-negative integer'</span>)</p>
+    <p class="f2">...</p>
+    <p>factorial = <span class="light-gray">1</span></p>
+    <p><span class="dark-green"><strong>for</strong></span> i <span class="purple"><strong>in</strong></span> <span class="dark-green">range</span>(<span class="light-gray">2</span>, n + <span class="light-gray">1</span>):</p>
+    <p class="command-seven">factorial <span class="light-gray">*=</span> i</p>
+    <p class="f2">...<p>
+    <p><span class="dark-green">print</span>(factorial)</p>
+  </code>
+</div>
+
+<p>For more information you can visit the wikipedia page <a href="https://en.wikipedia.org/wiki/Python_(programming_language)#Syntax_and_semantics" target="_blank">Python(programming language)</a></p>
+  </section><br>
+<!-- End of Section Three -->
+
+<!--Section Four-->
+  <section class="main-section" id="c">
+    <header class="c"><h1><em><u>C</u></em></h1></header>
+    <h3><strong><u>History</u></strong></h3>
+    <p>The origin of C is closely tied to the development of the <a href="https://en.wikipedia.org/wiki/Unix" target="_blank">Unix</a> operating system, originally implemented in <a href="https://en.wikipedia.org/wiki/Assembly_language" target="_blank">assembly language</a> on a <a href="https://en.wikipedia.org/wiki/PDP-7" target="_blank">PDP-7</a> by Dennis Ritchie and Ken Thompson, incorporating seveal ideas from colleagues. Eventually, they decided to port the opearting syste, to a <a href="https://en.wikipedia.org/wiki/PDP-11" target="_blank">PDP-11</a>. The original PDP-11 version of Unix was also developed in assembly language.</p>
+    
+    <p>Thompson desired a programming language to make utilities for the new platform. At first, he tried to make a <a href="https://en.wikipedia.org/wiki/Fortran" target="_blank">Fortran</a> compiler, but soon gave up the idea. Instead, he created a cut-down version of the recently developed <a href="https://en.wikipedia.org/wiki/BCPL" target="_blank">BCPL</a> <a href="https://en.wikipedia.org/wiki/Systems_programming_language" target="_blank">systems programming language</a>. The official description of BCPL was not available at the time, and Thompson modified the syntax to be less wordy, producing the similar but somewhat simpler <a href="https://en.wikipedia.org/wiki/B_(programming_language)" target="_blank">B</a>. However, few utilities were ultimatrly written in B because it was too slow, and B could not take advanatage of PDP-11 features such as <a href="https://en.wikipedia.org/wiki/Byte" target="_blank">byte</a> addressability.</p>
+    
+    <p>In 1972, Ritchie started to improve B, most notably adding data typing for variables, which resulted in creating a new language C. The C compilerr and some utilities made with it were included in <a href="https://en.wikipedia.org/wiki/Version_2_Unix" target="_blank">Version 2 Unix</a>.</p>
+    
+    <p>At <a href="https://en.wikipedia.org/wiki/Version_4_Unix" target="_blank">Version 4 Unix</a>, releaased in November 1973, the <a href="https://en.wikipedia.org/wiki/Unix" target="_blank">Unix</a> <a href="https://en.wikipedia.org/wiki/Kernel_(operating_system)" target="_blank">kernel</a> was extensively re-implemented in C. by ths time, the C language had acquired some powerful features such as <span class="block">struct</span> types.</p>
+    
+    <p>The <a href="https://en.wikipedia.org/wiki/C_preprocessor" target="_blank">preprocessor</a> was introduced around 1973 at the urging of <a href="https://en.wikipedia.org/w/index.php?title=Alan_Snyder_(computer_scientist)&action=edit&redlink=1" target="_blank" class="red">Alan Snyder</a> and also in recognition of the usefulness of the file-inclusion mechanisms availabe in BCPL and PL/l. Its original version provided only ncluded files and simle string replacements: <span class="block">#include</span> and <span class="block">#define</span> of parameterless macros. Soon after that, it was extended, mostly by <a href="https://en.wikipedia.org/wiki/Mike_Lesk" target="_blank">MIke Lesk</a> and then by John Reiser, to incorporate macros with arguments and conditional compilation.</p>
+    
+    <p>Unix was one of the first operating syste, kernels implemented in a language other than <a href="https://en.wikipedia.org/wiki/Assembly_language" target="_blank">assembly</a>. Earlier instances include the <a href="https://en.wikipedia.org/wiki/Multics" target="_blank">Multics</a> syste, (which was written in <a href="https://en.wikipedia.org/wiki/PL/I" target="_blank">PL/l</a>) and <a href="https://en.wikipedia.org/wiki/Burroughs_MCP" target="_blank">Master Control Program</a>(MCP) for the <a href="https://en.wikipedia.org/wiki/Burroughs_large_systems" target="_blank">Burroughs B5000</a> (which was written in <a href="https://en.wikipedia.org/wiki/ALGOL" target="_blank">ALGOL</a>) in 1961. In around 1977, Ritchie and <a href="https://en.wikipedia.org/wiki/Stephen_C._Johnson" target="_blank">Stephen C Johnson</a> made further changes to the language to facillitate portability of the Unix operating system. Johnson's <a href="https://en.wikipedia.org/wiki/Portable_C_Compiler" target="_blank">Portable C Compilerr</a> served as the basis for several implementations of C on new platforms.</p>
+    
+    
+    <h5>Time of language development</h5>
+    <table class="bc">
+      <tr class="table">
+        <td>Year</td>
+        <td>C Standard</td>
+      </tr>
+      <tr>
+        <td>1972</td>
+        <td>Birth</td>
+      </tr>
+      <tr>
+        <td>1978</td>
+        <td>K&R C</td>
+      </tr>
+      <tr>
+        <td>1989/1990</td>
+        <td>ANSI C and ISO C</td>
+      </tr>
+      <tr>
+        <td>1999</td>
+        <td><a href="https://en.wikipedia.org/wiki/C99" target="_blank">C99</a></td>
+      </tr>
+      <tr>
+        <td>2011</td>
+        <td><a href="https://en.wikipedia.org/wiki/C11_(C_standard_revision)" target="_blank">C11</a></td>
+      </tr>
+      <tr>
+        <td>2017</td>
+        <td><a href="https://en.wikipedia.org/wiki/C17_(C_standard_revision)" target="_blank">C17</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://en.wikipedia.org/wiki/TBD" target="_blank">TBD</a></td>
+        <td><a href="https://en.wikipedia.org/wiki/C2x" target="_blank">C2x</a></td>
+      </tr>
+    </table>
+    
+    <h4><strong>Embedded C</strong></h4>
+    <p><em>Main article: <a href="https://en.wikipedia.org/wiki/Embedded_C" target="_blank">Embedded C</a></em></p>
+    
+    <p>historically, embedded C programming required nonstandard extensions to the C language in order to support exotic features such as <a href="https://en.wikipedia.org/wiki/Fixed-point_arithmetic" target="_blank">fixed-point arithmetic</a>, multiple distinct memory banks, and basic I/O  operations.</p>
+    
+    <p>In 2008, the C Standards Committee published a <a href="https://en.wikipedia.org/wiki/Technical_report" target="_blank">technical report</a> extending the C language to addres these issues by providing a common standard for ll implementations to adhere to. It includes a number of features not available in normal C, such as <a href="https://en.wikipedia.org/wiki/Fixed-point_arithmetic" target="_blank">fixed-point arithmetic</a>, named address spaces, and basic I/O hardware addressing.</p>
+
+
+<h3><strong><u>Syntax</u></strong></h3>
+<p><em>Main article: <a href="https://en.wikipedia.org/wiki/C_syntax" target="_blank">C syntax</a></em></p>
+<p>C has a <a href="https://en.wikipedia.org/wiki/Formal_grammar" target="_blank">formal grammar</a> specified by the C standard. Line enings are generally not significant in C, however, line boundaries do have significance during the preprocessing phase. Comments may appear either between the delimiters <span class="block">/*</span> and <span class="block">*/</span>, or (since C99) following <span class="block">//</span> until the end of the line. Comments delimted by <span class="block">/*</span> and <span class="block">*/</span> do not nest, and these sequences of characters are not interpreted as comment delimiters if they appear inside <a href="https://en.wikipedia.org/wiki/String_literal" target="_blank">string</a> pr character literals.</p>
+
+<p>C source files contain declarations and function definitions. Funxtion definitions, in turn, contain declarationss and <a href="https://en.wikipedia.org/wiki/Statement_(computer_science)" target="_blank">statements</a>. Declarations either define new types using keywords such as <span class="block">struct</span>, <span class="block">union</span>, and <span class="block">enum</span>, or assign types to and perhaps reserve storage for new variables, usually by writing the type followed by the variable name. Keywords such as <span class="block">char</span> and <span class="block">int</span> specifically built-in types. Sections of code are enclosed in braces (<span class="block">{</span> and <span class="block">}</span>, sometimes called "curly brackets") to limit the scope of declarations and to act as sa single statement for control structures.</p>
+
+<p>As an imperative language, C used <em>statements</em> to specify actions. The most common statement is an <em>expression statement</em>, consisting of an expression to be evaluated, followed by semicolon, as a <a href="https://en.wikipedia.org/wiki/Side_effect_(computer_science)" target="_blank">side effect</a> of the evaluation, functions may be <a href="https://en.wikipedia.org/wiki/Procedure_call" target="_blank">called</a> and variables may be <a href="https://en.wikipedia.org/wiki/Assignment_(computer_science)" target="_blank">assigned</a> new values. To modify the normal sequential execution of statements, C provides several control-flow statements identified by reserved keywords. <a href="https://en.wikipedia.org/wiki/Structured_programming" target="_blank">Structured programming</a> is supported by <span class="block">if</span>...{<span class="block">else</span>} conditional execution and by <span class="block">do</span>...<span class="block">while</span>, <span class="block">while</span>, and <span class="block">for</span> iterative execution (looping). The <span class="block">for</span> statement has seperate initialization, testing, and reinitialization expressions, any or all of which can be omitted. <span class="block">break</span> and <span class="block">continue</span> can be used to leave the innermost enclosing loop statement or skip its reinitialization. There is also a non-structured <span class="block"><a href="https://en.wikipedia.org/wiki/Goto" target="_blank">goto</a></span> statement which branches directly to the designated <a href="https://en.wikipedia.org/wiki/Label_(computer_science)" target="_blank">label</a> within the function. <span class="block">switch</span> selects a <span class="block">case</span> to be executed based on the value of an integer expression.</p>
+
+<p>Expressions can be used a variety of built-in operators and may contain function calls. The order in which arguments to functions and operands to most operators are evaluated is unspecified. The evaluations may even be interleaved. However, all side effecta (including storage to variables) will occur before the next "<a href="https://en.wikipedia.org/wiki/Sequence_point" target="_blank">sequence point</a>", sequenxe points include the end of each expression statement, and the entry to and return from each function call. Sequence points also occur during evaluation of expressions containing certin operators (<span class="block">&&</span>, <span class="block">||</span>, <span class="block"><a href="https://en.wikipedia.org/wiki/%3F:" target="_blank">?:</a></span> and the <a href="https://en.wikipedia.org/wiki/Comma_operator" target="_blank">comma operator</a>). This permits a high degree of object o+code optimization by the compiler, but requires C  programmers to take more to obtain reliable results than is needed for other programming languages.</p>
+
+<p>kernighan and Ritchie say in the Introduction of <em>The C Programming Language</em>: "C, like any other language, has its blemishes. Some of the operators have the wrong precedence; some parts of the syntax could be better." The C standard did not attempt to correct many of these blemishes, because of the impact of such changes on already existing software.</p>
+
+<h4><strong>Character set</strong></h4>
+<p>The basic C source character set includes the following characters:</p>
+<ul>
+  <li>Lowercase and uppercase letters of ISO Basic Latin Alphabet: <span class="block">a-z</span> <span class="block">A-Z</span></li>
+  <li>Decimal digits: <span class="block">0-9</span></li>
+  <li>Graphic characters:<span class="block">! " # % & ' ( ) * + , / : ; = ? [ \ ] ^ _ { | } ~</span></li>
+  <li><a href="https://en.wikipedia.org/wiki/Whitespace_character" target="_blank">Whitespace characters</a>: <em><a href="https://en.wikipedia.org/wiki/Space_(punctuation)" target="_blank">space</a>, <a href="https://en.wikipedia.org/wiki/Tab_character" target="_blank">horizontal tab</a>, <a href="https://en.wikipedia.org/wiki/Tab_character" target="_blank">vertical tab</a>, <a href="https://en.wikipedia.org/wiki/Page_break" target="_blank">form feed</a>, <a href="https://en.wikipedia.org/wiki/Newline" target="_blank">newline</a></em></li>
+</ul>
+
+<p>Newline indicates the end of a text line; it need not correspond to an actual single character, although for convenience C treats it as one.</p>
+
+<p>Additional multi-byte encoded characters may be used in string literals, but they are entirely <a href="https://en.wikipedia.org/wiki/Software_portability" target="_blank">portable</a>. The latest C standard (<a href="https://en.wikipedia.org/wiki/C11_(C_standard_revision)" target="_blank">C11</a>) allows multi-national <a href="https://en.wikipedia.org/wiki/Unicode" target="_blank">Unicodee</a> characters to be embedded portably ithin C source text by using <span class="block">\uXXXX</span> or <span class="block">\UXXXXXXXX</span> encoding (where the <span class="block">X</span> denotes a hexadecimal character), although this feature is not yet widely implemented.</p>
+
+<p>The basic C execution character set contains the same characters, along with representations for <a href="https://en.wikipedia.org/wiki/Bell_character" target="_blank">alert</a>, <a href="https://en.wikipedia.org/wiki/Backspace" target="_blank">backspace</a>, and <a href="https://en.wikipedia.org/wiki/Carriage_return" target="_blank">carriage return</a>. <a href="https://en.wikipedia.org/wiki/Run_time_(program_lifecycle_phase)" target="_blank">Run-time</a> support for extended character sets has increased with each revision of the C standard.</p>
+
+<h4><strong>Reserved words</strong></h4>
+<ul class="line">
+  <li><span class="block">auto</span></li>
+  <li><span class="block">break</span></li>
+  <li><span class="block">case</span></li>
+  <li><span class="block">char</span></li>
+  <li><span class="block"><a href="https://en.wikipedia.org/wiki/Const_(computer_programming)" target="_blank">const</a></span></li>
+  <li><span class="block">continue</span></li>
+  <li><span class="block">default</span></li>
+  <li><span class="block">do</span></li>
+  <li><span class="block"><a href="https://en.wikipedia.org/wiki/Double_precision" target="_blank">double</a></span></li>
+  <li><span class="block">else</span></li>
+  <li><span class="block"><a href="https://en.wikipedia.org/wiki/Enumerated_type" target="_blank">enum</a></span></li>
+  <li><span class="block"><a href="https://en.wikipedia.org/wiki/External_variable" target="_blank">extern</a></span></li>
+  <li><span class="block"><a href="https://en.wikipedia.org/wiki/Floating_point" target="_blank">float</a></span></li>
+  <li><span class="block"><a href="https://en.wikipedia.org/wiki/For_loop" target="_blank">for</a></span></li>
+  <li><span class="block"><a href="https://en.wikipedia.org/wiki/Goto" target="_blank">goto</a></span></li>
+  <li><span class="block">if</span></li>
+  <li><span class="block">int</span></li>
+  <li><span class="block"><a href="https://en.wikipedia.org/wiki/Long_integer" target="_blank">long</a></span></li>
+  <li><span class="block"><a href="https://en.wikipedia.org/wiki/Register_(C_programming_language)" target="_blank">register</a></span></li>
+  <li><span class="block">return</span></li>
+  <li><span class="block"><a href="https://en.wikipedia.org/wiki/Short_integer" target="_blank">short</a></span></li>
+  <li><span class="block">signed</span></li>
+  <li><span class="block"><a href="https://en.wikipedia.org/wiki/Sizeof" target="_blank">sizeof</a></span></li>
+  <li><span class="block"><a href="https://en.wikipedia.org/wiki/Static_(keyword)" target="_blank">static</a></span></li>
+  <li><span class="block"><a href="https://en.wikipedia.org/wiki/Struct_(C_programming_language)" target="_blank">struct</a></span></li>
+  <li><span class="block"><a href="https://en.wikipedia.org/wiki/Switch_statement" target="_blank">switch</a></span></li>
+  <li><span class="block">typedef</span></li>
+  <li><span class="block">union</span></li>
+  <li><span class="block">unsigned</span></li>
+  <li><span class="block"><a href="https://en.wikipedia.org/wiki/Void_type" target="_blank">void</a></span></li>
+  <li><span class="block"><a href="https://en.wikipedia.org/wiki/Volatile_variable" target="_blank">volatile</a></span></li>
+  <li><span class="block"><a href="https://en.wikipedia.org/wiki/While_loop" target="_blank">while</a></span></li>
+</ul>
+
+<p>C99 reserved five more words:</p>
+<ul>
+  <li><span class="block">_Block</span></li>
+  <li><span class="block">_Complex</span></li>
+  <li><span class="block">_Imaginary</span></li>
+  <li><span class="block"><a href="https://en.wikipedia.org/wiki/Inline_function" target="_blank">inline</a></span></li>
+  <li><span class="block"><a href="https://en.wikipedia.org/wiki/Restrict" target="_blank">restrict</a></span></li>
+</ul>
+
+<p>C11 reserved seven more words:</p>
+<ul>
+  <li><span class="block">_Alignas</span></li>
+  <li><span class="block">_Alignof</span></li>
+  <li><span class="block">_Atomic</span></li>
+  <li><span class="block">_Generic</span></li>
+  <li><span class="block">_Noreturn</span></li>
+  <li><span class="block">_Static_assert</span></li>
+  <li><span class="block">_Thread_local</span></li>
+</ul>
+
+<p>Most of the recently reserved words begin with an underrscore followed by a capital letter, because indentifiers of that form were previously reserved by the C standard for use only by implementations. Since existing program source code should not have been using these identifiers, it  would not be affected when C implementations started supporting these extensions to the program language. Some standard headers do define more convenient synonyms for underscored identifiers. The language previously included a reserved word called <span class="block">entry</span>, but this was seldom implemented, and has now been removed as a reserved word.</p>
+
+<h4><strong>Operators</strong></h4>
+<p><em>Main article: <a href="https://en.wikipedia.org/wiki/Operators_in_C_and_C%2B%2B" target="_blank">Operators in C and C++</a></em></p>
+
+<p>C supports a rich set of <a href="https://en.wikipedia.org/wiki/Operator_(computer_programming)" target="_blank">operators</a>, which are symbols used within an <a href="https://en.wikipedia.org/wiki/Expression_(computer_science)" target="_blank">expression</a> to specify the manipulations to be perrformed while evaluating that expression, C has operators for:</p>
+<ul>
+  <li><a href="https://en.wikipedia.org/wiki/Arithmetic" target="_blank">arithmetic</a>: <span class="block">+</span>, <span class="block">-</span>, <span class="block">*</span>, <span class="block">/</span>, <span class="block">%</span></li>
+  <li><a href="https://en.wikipedia.org/wiki/Assignment_(computer_science)" target="_blank">assignemnt</a>: <span class="block">=</span></li>
+  <li><a href="https://en.wikipedia.org/wiki/Augmented_assignment" target="_blank">augmented assignemnt</a>: <span class="block">+=</span>, <span class="block">-=</span>, <span class="block">*=</span>, <span class="block">/=</span>, <span class="block">%=</span>, <span class="block">&=</span>, <span class="block">|=</span>, <span class="block">^=</span>, <span class="block"><<=</span>, <span class="block"> >>=</span></li>
+  <li><a href="https://en.wikipedia.org/wiki/Bitwise_operation" target="_blank">bitwise logic</a>: <spam class="block">~</spam>, <span class="block">&</span>, <span class="block">|</span>, <span class="block">^</span></li>
+  <li><a href="https://en.wikipedia.org/wiki/Bit_shift" target="_blank">bitwise shifts</a>: <span class="block"><<</span>, <span class="block">>></span></li>
+  <li><a href="https://en.wikipedia.org/wiki/Boolean_algebra" target="_blank">boolean logic</a>: <span class="block">!</span>, <span class="block">&&</span>, <span class="block">||</span></li>
+  <li><a href="https://en.wikipedia.org/wiki/%3F:" target="_blank">conditional evaluation</a>: <span class="block">? :</span></li>
+  <li>equality testing: <span class="block">==</span>, <span class="block">!=</span></li>
+  <li><a href="https://en.wikipedia.org/wiki/Subroutine" target="_blank">calling functions</a>: <span class="block">( )</span></li>
+  <li><a href="https://en.wikipedia.org/wiki/Increment_and_decrement_operators" target="_blank">increment and decrement</a>: <span class="block">++</span>, <span class="block">--</span></li>
+  <li><a href="https://en.wikipedia.org/wiki/Record_(computer_science)" target="_blank">member selection</a>: <span class="block">.</span>, <span class="block">-></span></li>
+  <li>object size: <span class="block"><a href="https://en.wikipedia.org/wiki/Sizeof" target="_blank">sizeof</a></span></li>
+  <li><a href="https://en.wikipedia.org/wiki/Order_theory" target="_blank">order relations</a>: <span class="block"><</span>, <span class="block"><=</span>, <span class="block">></span>, <span class="block">>=</span></li>
+    <li><a href="https://en.wikipedia.org/wiki/Pointer_(computer_programming)" target="_blank">reference and dereference</a>: <span class="block">&</span>, <span class="block">*</span>, <span class="block">[ ]</span></li>
+    <li>sequencing: <span class="block">,</span></li>
+    <li><a href="https://en.wikipedia.org/wiki/Order_of_operations#Programming_languages" target="_blank">subexpression grouping</a>: <span class="block">( )</span></li>
+    <li><a href="https://en.wikipedia.org/wiki/Type_conversion" target="_blank">type conversion</a>: <span class="block">(<em>typename</em>)</span></li>
+</ul>
+    
+    <p>C uses the operator <span class="block">=</span> (used in mathematics to express equality) to indicate assignment, following the precedent of <a href="https://en.wikipedia.org/wiki/Fortran" target="_blank">Fortran</a> and <a href="https://en.wikipedia.org/wiki/PL/I" target="_blank">PL/l</a>, but unlike <a href="https://en.wikipedia.org/wiki/ALGOL" target="_blank">ALGOL</a> and its derivatives. C uses the operator <span class="block">==</span> to test for equality. The similarity between these two operators (assignment and equality) may result in the accidental use of one in place of the other, and in many cases, the mistake does not produce an error message (although some compilers produce warnings). For example, the conditional expression <span class="block">if (a == b + 1)</span> might mistakenly be written as <span class="block">if (a = b + 1)</span>, which will be evaluated as true if <span class="block">a</span> is not zero after the assignment.</p>
+    
+    <p>The C <a href="https://en.wikipedia.org/wiki/Order_of_operations" target="_blank">operator precedence</a> is not always intuitive. For example, the operator <span class="block">==</span> binds more tightly than (is executed prior to) the operators <span class="block">&</span> (bitwise AND) and <span class="block">|</span> (bitwise OR) in expressions such as <span class="block">x & 1 == 0</span>, which must be written as <span class="block">(x & 1) == 0</span> if that is the coder's intent.</p>
+    
+    <h3><strong><u>"Hello, world" example</u></strong></h3>
+    <p><em>See also: <a href="https://en.wikipedia.org/wiki/Hello,_world" target="_blank">Hello, World</a></em></p>
+    
+    <p>The "<a href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program" target="_blank">hello, world</a>" example, which appeared in the first edition of <a href="https://en.wikipedia.org/wiki/The_C_Programming_Language" target="_blank"><em>K&R</em></a>, has become the model for an introductory program in most programming textbooks. The program prints "hello, world" to the <a href="https://en.wikipedia.org/wiki/Standard_output" target="_blank">standard output</a>, which is usually a terminal or screen display.<p>
+    
+    <p>The original version was:</p>
+    <code class="block">
+      <p class="command">main()</p>
+      <p class="command">{</p>
+      <p class="command-seven">printf(<span class="red">"hello, world\<strong>n</strong>"</span>);</p>
+      <p class="command">}</p>
+    </code>
+      
+    <p>A standard-conforming "hello, world" program is:</p>
+    <div>
+      <code class="block">
+        <p class="command"><span class="strong-orange">#include</span> <em><span class="paradiso"><</span><span class="paradiso">stdio.h</span><span class="paradiso">></span></em></p>
+        <p class="f2">...</p>
+        <p class="command"><span class="dark-pink">int</span> <spam class="moderate-blue">main</spam>(<span class="dark-pink">void</span>)</p>
+        <p class="command">{</p>
+        <p class="command-seven">printf(<span class="red">"hello, world<span class="strong-red"><strong>\n</strong></span>"</span>);</p>
+        <p class="command">}</p>
+      </code>
+    </div>
+    
+    <p>The first line of the program contains a <a href="https://en.wikipedia.org/wiki/Preprocessor" target="_blank">preprocessing directive</a>, indicated by <span class="block">#include</span>. This causes the compiler to replace that line with the entire text of the <span class="block"><a href="https://en.wikipedia.org/wiki/Stdio.h" target="_blank">stdio.h</a></span> standard header, which contains declarations for standard input and output functions such as <span class="block">printf</span> and <span class="block">scanf</span>. The angle brackets surrounding <span class="block">stdio.h</span> indicate that <span class="block">stdio.h</span> is located using a search stratergy that prefers headers provided with the compiler to other headers having the same name, as opposed to double quotes which typically include local or project-specific header files.</p>
+    
+    <p>The next line indicates that a function named <span class="block">main</span> is being defined. The <span class="block"><a href="https://en.wikipedia.org/wiki/Main_function_(programming)">main</a></span> function serves a special purpose in C programs; the run-time environment calls the <span class="block">main</span> function to begin program execution. The type specifier <span class="block">int</span> indicates that the value that is returned to the invoker (in this case the run-time environment) as a result of evaluating the <span class="block">main</span> function, is an integer. The keyword <span class="block">void</span> as a parameter list indicates that this function takes no arguments.</p>
+    
+    <p>The opening curly bracket indicates the beginning of the definition of the <span class="block">main</span> function.</p>
+    
+    <p>The next line <strong><em>calls</em></strong> (diverts execution to) a function named <span class="block"><a href="https://en.wikipedia.org/wiki/Printf" target="_blank">printf</a></span>, which in this case is supplied from a system <a href="https://en.wikipedia.org/wiki/Library_(computing)" target="_blank">library</a>. In this call, the <span class="block">printf</span> function is <strong><em>passed</em></strong> (provided with) a single argument, the address of the first character in the <a href="https://en.wikipedia.org/wiki/String_literal" target="_blank">string literal</a> <span class="block">"hello, world\n"</span>. The string literal is an unnamed <a href="https://en.wikipedia.org/wiki/Array_data_type" target="_blank">array</a> with elements of type <span class="block">char</span>, set up automatically by the compiler with a final 0-valued character to mark the end of the array (<span class="block">printf</span> needs to know this). The <span class="block">\n</span> is an <a href="https://en.wikipedia.org/wiki/Escape_sequences_in_C" target="_blank"><em>escape sequence</em></a> that C translates to a <em><a href="https://en.wikipedia.org/wiki/Newline" target="_blank">newline</a></em> character, which on output signifies the end of the current line. The return value of the <span class="block">printf</span> function is of type <span class="block">int</span>, but it is silently discarded since it is not used. (A more careful program might test the return value to determine whether or not the <span class="block">printf</span> function succeeded.) The semicolon <span classs="block">;</span> terminates the statement.</p>
+    <p>The closing curly brackets indicates the end of the code for the <span class="block">main</span> function. According to the C99 specification and newer, the <span class="block">main</span> function, unlike any other function, will implicitly return a value of <span class="block">0</span> upon reaching the <span class="block">}</span> that terminates the function. (Formerly an explicit <span class="block">return 0;</span> statement was required.) This is interpreted by the run-time system as an exit code indicating successful execution.</p>
+    <p>For more information you can visit the wiki page <a href="https://en.wikipedia.org/wiki/C_(programming_language)#Embedded_C" target="_blank">C(programming language)</a>.</p>
+  </section>
+  <!-- End of Section Four -->
+    
+  <!-- Section five -->
+  <section class="main-section" id="r">
+    <header class="r"><h1><u><em>R</em></u></h1></header>
+    <h3><strong><u>History</u></strong></h3>
+    
+    <p>R is an open-source implementation of the <a href="https://en.wikipedia.org/wiki/S_(programming_language)" target="_blank">S programming language</a> combined with <a href="https://en.wikipedia.org/wiki/Lexical_scoping" target="_blank">lexical scoping</a> semantics from <a href="https://en.wikipedia.org/wiki/Scheme_(programming_language)" target="_blank">Scheme</a>, which allow objects to be defined in predeterminedd blocks rather than the entirety of the code. S was created by Rick Becker, <a href="https://en.wikipedia.org/wiki/John_Chambers_(programmer)" target="_blank">John Chambers</a>, Doug Dunn, Jean McRae, and Juddy Schilling at <a href="https://en.wikipedia.org/wiki/Bell_Laboratories" target="_blank">Bell Labs</a> around 1976. Designed for statistical analysis, the language is an <a href="https://en.wikipedia.org/wiki/Interpreter_(computing)" target="_blank">interpreted language</a> whose code could be directly run without a <a href="https://en.wikipedia.org/wiki/Compiler" target="_blank">compiler</a>. Many codes written for S run unaltered in R. Scheme was created by <a href="https://en.wikipedia.org/wiki/Gerald_Jay_Sussman" target="_blank">Gerald J. Sussman</a> and <a href="https://en.wikipedia.org/wiki/Guy_L._Steele_Jr." target="_blank">Guy L. Steele Jr.</a> at <a href="https://en.wikipedia.org/wiki/Massachusetts_Institute_of_Technology" target="_blank">MIT</a> around 1975.</p>
+    
+    <p>In 1991, statisticians Ross Ihaka and Robert Gentleman at the <a href="https://en.wikipedia.org/wiki/University_of_Auckland" target="_blank">University of Auckland</a>, New Zealand, embarked on an S implementation. It was named partly after the first names of the first two R authors and partly as a play on the name of S. They began publicizing it on the data archive StatLib and the <em>s-news</em> mailing list in August 1993. In 1995, statistician Martin Machier convinced Ihaka and Gentleman to make R <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software" target="_blank">free and open-source software</a> under the <a href="https://en.wikipedia.org/wiki/GNU_General_Public_License" target="_blank">GNU General Public License</a>. The first official release came in June 1955. The first official <a href="https://en.wikipedia.org/wiki/Software_release_life_cycle#BETA" target="_blank">"stable beta"</a> version (v1.0) was released on 29 February 2000.</p>
+    
+    <p>The <a href="https://en.wikipedia.org/wiki/R_package#Comprehensive_R_Archive_Network_(CRAN)" target="_blank">Comprehensive R Archive Network</a> (CRAN) was officially announced on 23 April 1997. CRAN stores R's executables files, source code, documentations, as well as packages contributed by users. CRAN originally had 3 mirrors and 12 contributed packages. As of January 2022, it has 101 mirrors and 18,728 contributed packages.</p>
+    
+    <p>The R Core Team was formed in 1997 to further develop the language. As of January 2022, it consists of Chambers, Gentleman, Ihaka, and Machier, plus statisticians Douglas Bates, <a href="https://en.wikipedia.org/wiki/Peter_Dalgaard" target="_blank">Peter Dalgaard</a>, <a href="https://en.wikipedia.org/w/index.php?title=Kurt_Hornik&action=edit&redlink=1" target="_blank" class="red">Kurt Hornik</a>. Michael Lawrence, Friedrich Leisch, Uwe Ligges, <a href="https://en.wikipedia.org/wiki/Thomas_Lumley_(statistician)" target="_blank">Thomas Lumley</a>, Sebastian Meyer, Paul Murrell, Martyn Plummer, <a href="https://en.wikipedia.org/wiki/Brian_Ripley" target="_blank">Brian Ripley</a>, Deepayan Sarkar, Duncan Temple Lang, <a href="https://en.wikipedia.org/wiki/Luke_Tierney" target="_blank">Luke Tierney</a>, and Simon Urbanek, as well asa computer scientist Tomas Kalibera. Stefano Iacus, Guido Masarotto, Heiner Schwarte, Seth Falcon, Martin Morgan, and Duncan Murdoch were members. In April 2003, the R Foundation was founded as a non-profit orginization to provide further support for the R project.</p>
+    
+    <h3><strong><u>Milestones</u></strong></h3>
+    <p>A list of changes in R releases is maintained in various "news" files at CRAN. Some highlights are listed below for several major releases.</p>
+    <table>
+      <tr>
+        <td class="lgb"><strong>Release</strong></td>
+        <td class="lgb"><strong>Data</strong></td>
+        <td class="lgb"><strong>Description</strong></td>
+      </tr>
+      <tr>
+        <td class="lgb"><strong>0.16</strong></td>
+        <td class="f2 bc">...</td>
+        <td class="bc">This is the last <a href="https://en.wikipedia.org/wiki/Alpha_test" target="_blank">alpha</a> version developed primarily by Ihaka and Gentleman. Much of the basic functionality from the "White Book" (see <a href="https://en.wikipedia.org/wiki/S_(programming_language)#History" target="_blank">S history</a>) was implemented. The mailing lists commenced on 1 April 1997.</td>
+      </tr>
+      <tr>
+        <td class="lgb"><strong>0.49</strong></td>
+        <td class="bc">1997-04-23</td>
+        <td class="bc">This is the oldest <a href="https://en.wikipedia.org/wiki/Source_code" target="_blank">source</a> release which is currently available on CRSN. CRAN is started on this date, with 3 mirrors that initially hosted 12 packages. Alpha version of R for <a href="https://en.wikipedia.org/wiki/Microsoft_Windows" target="_blank">Microsoft Windows</a> and the <a href="https://en.wikipedia.org/wiki/Classic_Mac_OS" target="_blank">classic Mac OS</a> are made available shrtly after this version.</td>
+      </tr>
+      <tr>
+        <td class="lgb"><strong>0.60</strong></td>
+        <td class="bc">1997-12-05</td>
+        <td class="bc">R becomes an official part of the <a href="https://en.wikipedia.org/wiki/GNU_Project" target="_blank">GNU Project</a>. The code is hosted and maintained on <a href="https://en.wikipedia.org/wiki/Concurrent_Versions_System" target="_blank">CVS</a>.</td>
+      </tr>
+      <tr>
+        <td class="lgb"><strong>0.65.1</strong></td>
+        <td class="bc">1999-10-07</td>
+        <td class="bc">First verrsions of update packages and install packages functions for downloading and installing packages from CRAN.</td>
+      </tr>
+      <tr>
+        <td class="lgb"><strong>1.0</strong></td>
+        <td class="bc">2000-02-29</td>
+        <td class="bc">Considered by its developers stable enough for production use.</td>
+      </tr>
+      <tr>
+        <td class="lgb"><strong>1.4</strong></td>
+        <td class="bc">2001-12-19</td>
+        <td class="bc">S4 methods are introduced and the first version for <a href="https://en.wikipedia.org/wiki/MacOS" target="_blank">Mac OS X</a> is made available soon after.</td>
+      </tr>
+      <tr>
+        <td class="lgb"><strong>1.8</strong></td>
+        <td class="bc">2003-10-08</td>
+        <td class="bc">Introduced a flexible condition handing mechanism for signalling and handling condition objects.</td>
+      </tr>
+      <tr>
+        <td class="lgb"><strong>2.0</strong></td>
+        <td class="bc">2004-10-04</td>
+        <td class="bc">Introduced <a href="https://en.wikipedia.org/wiki/Lazy_loading" target="_blank">lazy loading</a>, which enables fast loading of data with minimal expense of system memory.</td>
+      </tr>
+      <tr>
+        <td class="lgb"><strong>2.1</strong></td>
+        <td class="bc">2005-04-18</td>
+        <td class="bc">Support for <a href="https://en.wikipedia.org/wiki/UTF-8" target="_blank">UFT-8</a> encoding, and the beginnings of <a href="https://en.wikipedia.org/wiki/Internationalization_and_localization" target="_blank">internationalization and localization</a> for different languages.</td>
+      </tr>
+      <tr>
+        <td class="lgb"><strong>2.6.2</strong></td>
+        <td class="bc">2008-02-08</td>
+        <td class="bc">Last version to support Windows 95, 98, me and NT 4.0</td>
+      </tr>
+      <tr>
+        <td class="lgb"><strong>2.11</strong></td>
+        <td class="bc">2010-04-22</td>
+        <td class="bc">Support for Windows 64-bit systems.</td>
+      </tr>
+      <tr>
+        <td class="lgb"><strong>2.12.2</strong></td>
+        <td class="bc">2011-02-25</td>
+        <td class="bc">Last version to support Windows 2000</td>
+      </tr>
+      <tr>
+        <td class="lgb"><strong>2.13</strong></td>
+        <td class="bc">2011-04-14</td>
+        <td class="bc">Adding a new compiler function that allowa apeeding up functions by converting them to <a href="https://en.wikipedia.org/wiki/Bytecode" target="_blank">bytecode</a>.</td>
+      </tr>
+      <tr>
+        <td class="lgb"><strong>2.14</strong></td>
+        <td class="bc">2011-10-31</td>
+        <td class="bc">Added mandatory namespaces for packages. Added a new parallel package.</td>
+      </tr>
+      <tr>
+        <td class="lgb"><strong>2.15</strong></td>
+        <td class="bc">2012-03-30</td>
+        <td class="bc">New load balancing functions: Improved serialisation soeed for long vectors.</td>
+      </tr>
+      <tr>
+        <td class="lgb"><strong>3.0.0</strong></td>
+        <td class="bc">2013-04-03</td>
+        <td class="bc">Support for numeric index values 2<sup>31</sup> and larger on 64-bit systems.</td>
+      </tr>
+      <tr>
+        <td class="lgb"><strong>3.3.3</strong></td>
+        <td class="bc">2017-03-06</td>
+        <td class="bc">Last version to support Microsoft Windows XP</td>
+      </tr>
+      <tr>
+        <td class="lgb"><strong>3.4.0</strong></td>
+        <td class="bc">2017-04-21</td>
+        <td class="bc">Just-in-time compilation (JIT) of functions and loops to byte-code enabled by default.</td>
+      </tr>
+      <tr>
+        <td class="lgb"><strong>3.5.0</strong></td>
+        <td class="bc">2018-04-23</td>
+        <td class="bc">Packages byte-compiled on installation by default. Compact internal representation of integer sequences. Added a new serialisation format to support compact internal representations.</td>
+      </tr>
+      <tr>
+        <td class="lgb"><strong>3.6.0</strong></td>
+        <td class="bc">2019-04-26</td>
+        <td class="bc">Improved sampling from a discrete uniform distribution, which was noticeably non-uniform on large populations. Ne serialisation format supported since 3.5.0 becomes the default.</td>
+      </tr>
+      <tr>
+        <td class="lgb"><strong>4.0.0</strong></td>
+        <td class="bc">2020-04-24</td>
+        <td class="bc">R now uses a <span class="block">stringsAsFactors = FALSE</span> default, and hence by default no longer converts strings to factors in calls to <span class="block">data.frame()</span> and <span class="block">read.table()</span>. Reference counting is used for tracking object sharing, which reduces the need for copying ibjects. New syntax for raw string constants.</td>
+      </tr>
+      <tr>
+        <td class="lgb"><strong>4.1.0</strong></td>
+        <td class="bc">2021-05-18</td>
+        <td class="bc">Introduced <span class="block">|></span> as the pipe operator for base R syntax (similar to the <span class="block">%>%</span> operator of the magrittr package) and the anonymous function shortcut syntax <span class="block">\(x) x+1</span></td>
+      </tr>
+    </table>
+    
+    <h3><strong><u>Interfaces</u></strong></h3>
+    <p>various applications can be used to edit or run R code.</p>
+    
+    <p>Early developers preferred to run R via the command line console, succeeded by those who prefer an <a href="https://en.wikipedia.org/wiki/Integrated_development_environment" target="_blank">IDE</a>. IDEs for include (in alphabetical order) <a href="https://en.wikipedia.org/wiki/Rattle_GUI" target="_blank">Rattle GUI</a>, <a href="https://en.wikipedia.org/wiki/R_Commander" target="_blank">R Commander</a>, <a href="https://en.wikipedia.org/wiki/RKWard" target="_blank">RKWard</a>, <a href="https://en.wikipedia.org/wiki/RStudio" target="_blank">RStudio</a>, and Tinn-R. R is also supported by multi-purpose IDEs such as <a href="https://en.wikipedia.org/wiki/Eclipse_(software)" target="_blank">Eclipse</a> via the StatET plugin, and <a href="https://en.wikipedia.org/wiki/Microsoft_Visual_Studio" target="_blank">Visual Studio</a> via the <a href="https://en.wikipedia.org/wiki/R_Tools_for_Visual_Studio" target="_blank">R Tools for Visual Studio</a>. Of these, RStudio is the most commonly used.</p>
+    
+    <p>Editors that support R include <a href="https://en.wikipedia.org/wiki/Emacs_Speaks_Statistics" target="_blank">Emacs</a>, <a href="https://en.wikipedia.org/wiki/Vim_(text_editor)" target="_blank">Vim</a> (Nvim-R plugin), <a href="https://en.wikipedia.org/wiki/Kate_(text_editor)" target="_blank">Kate</a>, <a href="https://en.wikipedia.org/wiki/LyX" target="_blank">LyX</a>, <a href="https://en.wikipedia.org/wiki/Notepad%2B%2B" target="_blank">Notepad++</a>, <a href="https://en.wikipedia.org/wiki/Visual_Studio_Code" target="_blank">Visual Studio Code</a>, <a href="https://en.wikipedia.org/wiki/WinEdt" target="_blank">WinEdt</a>, and Tinn-R. <a href="https://en.wikipedia.org/wiki/Jupyter" target="_blank">Jupyter Notebook can also be configured to edit and run R code.</p>
+      
+      <p>R functionality is accessible from scripting languages including <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">Python</a>, <a href="https://en.wikipedia.org/wiki/Perl" target="_blank">Pert</a>, <a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)" target="_blank">Ruby</a>, <a href="https://en.wikipedia.org/wiki/F_Sharp_(programming_language)" target="_blank">F#</a>, and <a href="https://en.wikipedia.org/wiki/Julia_(programming_language)" target="_blank">Julia</a>. Interfaces for other, high-level programming languages, like <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank">Java</a> and <a href="#+https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" target="_blank">NET C#</a> are available.</p>
+    
+    <p>For more information you can visit the wiki page: <a href="https://en.wikipedia.org/wiki/R_(programming_language)" target="_blank"> R(programming language)</a>.</p>
+    
+    <h3><strong><u>Examples</u></strong></h3>
+    <h4><strong>Basic syntax</strong></h4>
+    <p>The folllowing examples illustrate the basic <a href="https://en.wikipedia.org/wiki/Programming_language_syntax" target="_blank">syntax of the language</a> and use of the command interface. (An expanded list of standard language features can be found in the R manual, "Am Introduction to R.")</p>
+    
+    <p>In R, the general preffered <a href="https://en.wikipedia.org/wiki/Assignment_(computer_science)" target="_blank">assignment operator</a> is an arrow made from two characters <span class="block"><-</span>, although <span class="block">=</span> can be used in some cases.</p>
+      
+      <code class="block">
+        <strong>
+          <p><span class="nb">></span> <span class="b"><- 1:6</span> <span class="paradiso"><em># Create a numeric vector in the current environment</em></span></p>
+          <p><span class="nb">></span> <span class="b">y <- x^2</span> <span class="paradiso"><em># Create a vector based on the values in x</em></span></p>
+          <p><span class="nb">></span> <span class="blue">print</span>(y) <span class="paradiso"><em># Print the vector's contents.</em></span></p>
+          <p class="grey">[1]  1  4  9  16  25  36</p>
+          <p class="f2">...</p>
+          <p><span class="nb">></span> <span class="b"> z <- x + y</span> <span class="paradiso"><em># Create a new vector that is the sum of x and y</em></span></p>
+          <p><span class="nb">></span> z <span class="paradiso"><em># Return the contents of z to the current environment</em></span></p>
+          <p class="grey">[1]  2  6  12  20  30  42</p>
+        </strong>
+      </code>
+      
+    <p>For more examples you can visit <a href="https://en.wikipedia.org/wiki/R_(programming_language)#Examples" target="_blank">Examples</a> on the wikipedia page.</p>
+  </section><br>
+</main>
+
+<!-- All code here is written by me. All filled in text I got off the wikipedia sites 
+History of programming languages: "https://en.wikipedia.org/wiki/History_of_programming_languages".
+Python: "https://en.wikipedia.org/wiki/Python_(programming_language)".
+R: "https://en.wikipedia.org/wiki/R_(programming_language)".
+C: "https://en.wikipedia.org/wiki/C_(programming_language)#:~:text=C%20(%2F%CB%88si%CB%90%2F,efficiently%20to%20typical%20machine%20instructions.".
+ The information I got for "The Evolution of Programming Languages" I got from the geeks for geeks website:
+"https://www.geeksforgeeks.org/the-evolution-of-programming-languages/".
+All these text act as dummy text. All html and css code is originally written by me. -->

@@ -1,0 +1,454 @@
+#navbar {
+  background: linear-gradient(45deg, #000033, #000066, #000099, #0000cc, #000099, #000066, #000033);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  border-right: solid;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+#title {
+  background: linear-gradient(45deg, #004444, #000044, #004444);
+  padding: 0;
+  text-align: center;
+  border: solid;
+  border-color: #ffff66;
+  color: #ffff66;
+  margin-bottom: 20px;
+}
+
+.div {
+  border: solid;
+  border-color: black;
+  background: black;
+  color: #0000ff;
+}
+
+/*Secction Headings*/
+.history_of_programming_languages {
+  background: linear-gradient(45deg, #009999, #000099, #009999);
+  padding: 0;
+  text-align: center;
+  border: solid;
+  border-color: #ffff66;
+  color: #ffff66;
+  margin-bottom: 20px;
+}
+
+.the_evolution_of_programming_languages {
+  background: linear-gradient(45deg, #009999, #000099, #009999);
+  padding: 0;
+  text-align: center;
+  border: solid;
+  border-color: #ffff66;
+  color: #ffff66;
+  margin-bottom: 20px;
+}
+
+.python {
+  background: linear-gradient(45deg, #009999, #000099, #009999);
+  padding: 0;
+  text-align: center;
+  border: solid;
+  border-color: #ffff66;
+  color: #ffff66;
+  margin-bottom: 20px;
+}
+
+.c {
+  background: linear-gradient(45deg, #009999, #000099, #009999);
+  padding: 0;
+  text-align: center;
+  border: solid;
+  border-color: #ffff66;
+  color: #ffff66;
+  margin-bottom: 20px;
+}
+
+.r {
+  background: linear-gradient(45deg, #009999, #000099, #009999);
+  padding: 0;
+  text-align: center;
+  border: solid;
+  border-color: #ffff66;
+  color: #ffff66;
+  margin-bottom: 20px;
+}
+/*End of Section Headings*/
+
+.block {
+  box-sizing: border-box;
+  border: 1px solid lightgray;
+  display: inline-block;
+  background: #f2f2f2;
+  color: black;
+  font-family: monospace;
+}
+
+span {
+  color: white;
+}
+
+.command-one {
+  color: lightgreen;
+}
+
+.command {
+  margin-left: 10px;
+}
+
+.main-one {
+  margin-bottom: 20px;
+}
+
+.command-two {
+  margin-left: 20px;
+}
+
+a:hover {
+  color: #00cccc;;
+}
+
+table, th, td {
+  border-collapse: collapse;
+  border-style: solid;
+  border-color: black;
+}
+
+.table {
+  background: black;
+  color: white;
+}
+
+table {
+  font-family: monospace;
+}
+
+.matlab {
+  background-color: #fcfcdc;
+}
+
+.sql {
+  background-color: #dbe8d2;
+}
+
+.purple {
+  color: #cc00cc;
+}
+
+.command-three {
+  color: green;
+}
+
+.crimson {
+  color: #990000;
+}
+
+.red {
+  color: red;
+}
+
+dark-magenta {
+  color: #990099
+}
+
+.strong-blue {
+  color: #0000cc;
+}
+
+.dark-lime-green {
+  color: #009900;
+}
+
+.img{
+  width: 100%;
+}
+
+.soft-pink {
+  color: #f7547d;
+}
+
+.mostly-pure-blue {
+  color: #007bee;
+}
+
+.black {
+  background-color: #000000;
+}
+
+.dark-orange {
+  color: #aa5d00
+}
+
+.moderate-blue {
+  color: #4f56c4;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 275px;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 815px) {
+  #navbar {
+    background: linear-gradient(45deg, #000033, #000066, #000099, #0000cc, #000099, #000066, #000033);
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 1px solid;
+  }
+  
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 300px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+  
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
+
+.main-section article {
+  background-color: #ffffff;
+}
+
+.nav-link {
+ line-height: 1;   
+}
+
+body {
+  min-width: 290px;
+  background-color: #ffffff;
+  line-height: 1;
+}
+
+/*Python Code Colours */
+.dark-lime-green-one {
+  color: #04b12d;
+}
+
+.strong-pink {
+  color: #ca2197;
+}
+
+.very-dark-blue {
+  background-color: #08263d;
+}
+
+.bright-red {
+  color: #f74e4a
+}
+
+.white {
+  color: #ffffff;
+}
+/*End of Python Code Colors*/
+
+.command-four {
+  margin-left: 50px;
+}
+
+.command-five {
+  margin-left: 100px;
+}
+
+.command-six {
+  margin-left: 30px;
+}
+
+.command-seven {
+ margin-left: 40px; 
+}
+/*C# code color*/
+.classic-matte-black {
+  background: #1c1c1c;
+}
+
+.dark-moderate-cyan_lime-green {
+  color: #4d9882;
+}
+
+.dark-moderate-blue {
+  color: #4079ae;
+}
+
+.morning-glory {
+  color: #97c1dc;
+}
+
+.grayish-green {
+  color: #bcc9a2;
+}
+
+.mostly-desaturated-dark-orange {
+  color: #ab8874;
+}
+
+/*End of C# code color*/
+
+/* GO color code */
+.nero {
+  background-color: #252525;
+  color: #252525;
+}
+
+.cerulean-frost {
+  color: #5b96c3;
+}
+
+.pale-goldenrod {
+  color: #eee8aa;
+}
+
+.dark-salmon {
+  color: #e9967a;
+}
+
+.pantone-728 {
+  color: #d3a87c;
+}
+/*End of Go color code*/
+
+/*Swift color code*/
+.very-dark_mostly-black_blue {
+  color: #2a2a2c;
+  background-color: #2a2a2c;
+}
+
+.grayish-cyan_lime-green {
+  color: #9bb5ae;
+}
+
+.pink {
+  color: pink;
+}
+
+.cyan {
+  color: cyan;
+}
+
+.grayish-violet {
+  color: #a398b9;
+}
+
+.dark-cyan {
+  color: darkcyan;
+}
+
+.slightly-desaturated-red {
+  color: #b97064;
+}
+
+.blue {
+  color: blue;
+}
+
+.rose-quartz {
+  color: #c16688;
+}
+
+.dark-green {
+  color: darkgreen;
+}
+
+.black-color {
+  color: #000000
+}
+
+.bc {
+  background-color: #f8f9fa;
+  width: 100%;
+}
+
+.light-gray {
+  color: #565e6c;
+}
+
+#description {
+  width: 300px;
+}
+
+#mutability {
+  width: 200px;
+}
+
+#syntax-examples {
+  width: 300px;
+}
+
+.light {
+  line-weight: 100px ! important;
+}
+
+.f2 {
+  color: #f2f2f2;
+}
+
+.line {
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.strong-orange {
+  color: #cd8c24;
+}
+
+.paradiso {
+  color: #408080;
+}
+
+.dark-pink {
+  color: #b21d6e;
+}
+
+.strong-red {
+  color: #ba4c2e;
+}
+
+.lgb {
+  background-color: #eaecf0;
+  text-align: center;
+}
+
+.grey {
+  color: #888888;
+}
+
+.nb {
+  color: #000080;
+}
+
+.b {
+  color: black;
+}
